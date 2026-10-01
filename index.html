@@ -1,0 +1,1383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>La Grazia Aesthetics &amp; Wellness Center: Monthly Report | Local AI Registry</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700;12..96,800&family=Cormorant:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#F4F1EA; --paper-deep:#ECE6D6; --card:#FFFFFF; --ink:#0B1A2E; --muted:#5B6878; --line:#DDD6C6;
+  --blue:#1F4FE0; --bluetext:#1F4FE0; --tint:#E7EDFC; --coral:#FF5A3C; --coraltext:#C9391D; --coraltint:#FFE9E3;
+  --good:#117A4D; --goodtint:#E2F3EA;
+  --hero:#0B1A2E;
+  --serif:'Cormorant','Cormorant Garamond',Georgia,'Times New Roman',serif;
+  --label:'Bricolage Grotesque','Avenir Next','Segoe UI',system-ui,sans-serif;
+  --text:'Hanken Grotesk','Segoe UI',system-ui,sans-serif;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --paper:#09131F; --paper-deep:#0E1D2F; --card:#11233A; --ink:#F4F1EA; --muted:#9DB0C6; --line:#223750;
+    --bluetext:#8AA6FF; --tint:#15294B; --coraltext:#FF8A72; --coraltint:#3A1F1B; --good:#58D39B; --goodtint:#12301F;
+    --hero:#06101B;
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#09131F; --paper-deep:#0E1D2F; --card:#11233A; --ink:#F4F1EA; --muted:#9DB0C6; --line:#223750;
+  --bluetext:#8AA6FF; --tint:#15294B; --coraltext:#FF8A72; --coraltint:#3A1F1B; --good:#58D39B; --goodtint:#12301F;
+  --hero:#06101B;
+}
+html{background:var(--paper);height:auto;scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--text);font-size:16px;line-height:1.55;-webkit-font-smoothing:antialiased}
+h1,h2,h3,h4,p,dl,dd{margin:0}
+a{color:inherit}
+button{font-family:inherit}
+:focus-visible{outline:3px solid var(--coral);outline-offset:2px}
+.wrap{max-width:1070px;margin:0 auto;padding:0 24px}
+.ph{color:var(--coraltext);font-weight:700;margin-left:2px}
+
+/* ---------- hero ---------- */
+.hero{background:var(--hero);color:#F4F1EA;position:relative;overflow:hidden;
+  background-image:radial-gradient(900px 520px at 12% -12%,rgba(255,90,60,.24),transparent 62%),radial-gradient(900px 600px at 105% 8%,rgba(31,79,224,.34),transparent 62%)}
+.topbar{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:34px 0 22px;border-bottom:1px solid rgba(244,241,234,.16);flex-wrap:wrap}
+.lockup{display:flex;align-items:center;gap:10px;font-family:var(--label);font-weight:700;font-size:19px;letter-spacing:-.01em;color:#fff;text-decoration:none}
+.lockup svg{width:26px;height:26px;flex:none}
+.top-actions{display:flex;align-items:center;gap:12px;position:relative}
+.pill-ok{display:inline-flex;align-items:center;gap:8px;border:1px solid rgba(88,211,155,.55);background:rgba(17,122,77,.18);color:#8BE8BB;border-radius:999px;padding:7px 14px;font-family:var(--label);font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase}
+.pill-ok svg{width:13px;height:13px}
+.btn{font-family:var(--text);font-weight:600;font-size:14px;cursor:pointer;border-radius:8px;padding:10px 16px;border:1px solid var(--line);background:var(--card);color:var(--ink);display:inline-flex;align-items:center;gap:8px;text-decoration:none}
+.btn:hover{border-color:var(--blue)}
+.btn.ghost{background:transparent;color:#F4F1EA;border-color:rgba(244,241,234,.35)}
+.btn.ghost:hover{border-color:#fff}
+.btn.primary{background:var(--blue);border-color:var(--blue);color:#fff}
+.btn.coral{background:var(--coral);border-color:var(--coral);color:#1A0A06}
+.btn.outline-w{background:transparent;color:#fff;border-color:rgba(255,255,255,.4)}
+.menu{position:absolute;right:0;top:calc(100% + 8px);background:var(--card);color:var(--ink);border:1px solid var(--line);border-radius:10px;min-width:210px;padding:6px;z-index:30;display:none;box-shadow:0 12px 30px rgba(11,26,46,.18)}
+.menu.open{display:block}
+.menu button{display:block;width:100%;text-align:left;font:inherit;font-size:14px;background:none;border:0;padding:10px 12px;border-radius:6px;cursor:pointer;color:inherit}
+.menu button:hover{background:var(--tint)}
+.hero-main{text-align:center;padding:70px 0 54px}
+.hero .over{font-family:var(--label);font-size:12px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:#A7B4C7;margin-bottom:22px}
+.hero h1{font-family:var(--serif);font-weight:500;font-size:clamp(44px,7.2vw,92px);line-height:.98;letter-spacing:-.02em;color:#fff;max-width:13em;margin:0 auto 26px}
+.hero .lede{font-size:19px;color:#C8D2E0;max-width:36em;margin:0 auto}
+.hero .lede b{color:#fff;font-weight:700}
+.delivered{display:inline-flex;align-items:center;gap:9px;margin-top:28px;border:1px solid rgba(244,241,234,.28);border-radius:999px;padding:8px 18px;font-size:14px;color:#DCE4EF}
+.seen{display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:14px 34px;padding:26px 0 34px;border-top:1px solid rgba(244,241,234,.16)}
+.seen .lab{font-family:var(--label);font-size:11px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:#8FA0B8}
+.wm{color:#EEF2F8;opacity:.92;white-space:nowrap}
+.wm.usa{font-family:var(--label);font-weight:800;font-size:17px;letter-spacing:-.02em;line-height:.9;display:flex;align-items:center;gap:8px}
+.wm.usa i{width:26px;height:26px;border-radius:50%;background:#7C95C9;display:inline-block}
+.wm.globe{font-family:var(--serif);font-weight:600;font-size:16px;letter-spacing:-.02em;text-transform:uppercase}
+.wm.fin{font-family:var(--label);font-weight:700;font-size:17px;line-height:1}
+.wm.fin small{display:block;font-size:8.5px;letter-spacing:.34em;font-weight:600;opacity:.8}
+.wm.bar{font-family:var(--label);font-weight:600;font-size:25px;letter-spacing:-.04em}
+.wm.uae{font-family:var(--serif);font-weight:600;font-size:20px;text-decoration:underline;text-underline-offset:4px}
+.wm.more{color:#8FA0B8;font-size:15px}
+
+/* ---------- sections ---------- */
+section{padding:92px 0}
+section.alt{background:var(--paper-deep)}
+section.tight{padding-top:0}
+.head{text-align:center;max-width:720px;margin:0 auto 44px}
+.eyebrow{display:inline-flex;align-items:center;gap:14px;font-family:var(--label);font-size:12px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--coraltext);margin-bottom:16px}
+.eyebrow::before,.eyebrow::after{content:"";width:26px;height:2px;background:var(--coral);border-radius:2px}
+.head h2{font-family:var(--serif);font-weight:500;font-size:clamp(34px,5vw,58px);line-height:1;letter-spacing:-.02em;margin-bottom:16px}
+.head p{color:var(--muted);font-size:18px}
+.sub-h{font-family:var(--serif);font-weight:500;font-size:clamp(28px,3.6vw,40px);line-height:1.05;letter-spacing:-.015em;text-align:center;margin:64px 0 8px}
+.sub-p{text-align:center;color:var(--muted);margin:0 auto 28px;max-width:600px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px}
+
+/* state of AI (compact) */
+#state{padding:56px 0}
+#state .head{margin-bottom:26px}
+#state .head h2{font-size:clamp(28px,3.6vw,38px)}
+.state-row{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.sc{padding:18px 20px;display:flex;flex-direction:column;gap:8px}
+.sc h3{font-family:var(--label);font-weight:700;font-size:15px;line-height:1.25;letter-spacing:-.01em}
+.sc p{font-size:14px;color:var(--muted)}
+.sc .fy{font-size:14px;font-weight:600;padding-left:14px;position:relative}
+.sc .fy::before{content:"";position:absolute;left:0;top:.55em;width:7px;height:7px;border-radius:50%;background:var(--coral)}
+.sc a{margin-top:auto;font-size:12.5px;color:var(--bluetext);font-weight:600;text-decoration:none}
+.sc a:hover{text-decoration:underline}
+
+/* glance */
+.glance{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.g-card{border-radius:14px;padding:30px 28px;text-align:center;min-height:210px;display:flex;flex-direction:column;align-items:center;justify-content:center}
+.g-card .num{font-family:var(--label);font-weight:800;font-size:clamp(56px,8vw,84px);line-height:1;letter-spacing:-.04em}
+.g-card .t{font-weight:700;font-size:18px;margin-top:10px}
+.g-card .s{font-size:14px;opacity:.85;margin-top:3px}
+.g1{background:var(--blue);color:#fff;box-shadow:0 20px 40px -22px rgba(31,79,224,.6)}
+.g2{background:var(--ink);color:#F4F1EA}
+:root[data-theme="dark"] .g2{background:#0A1626;border:1px solid var(--line)}
+.g3{background:var(--card);border:1px solid var(--line)}
+.g4{background:var(--goodtint);border:1px solid color-mix(in srgb,var(--good) 30%,transparent)}
+.g4 .num{color:var(--good)}
+.g3 .num small{font-size:.38em;color:var(--coraltext);margin-left:6px;letter-spacing:0}
+.engs{display:flex;gap:8px;margin-bottom:12px}
+.eng{width:26px;height:26px;border-radius:50%;display:inline-grid;place-items:center;font-family:var(--label);font-weight:800;font-size:12px;color:#fff;flex:none}
+.tiles{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:16px}
+.tile{padding:22px 16px;text-align:center}
+.tile b{display:block;font-family:var(--label);font-weight:800;font-size:30px;letter-spacing:-.03em;line-height:1.1}
+.tile span{font-family:var(--label);font-size:11px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+
+/* wins */
+.win{padding:30px;margin-bottom:18px}
+.win-top{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:6px}
+.win-top .e{display:flex;align-items:center;gap:10px;font-family:var(--label);font-weight:700;font-size:14px}
+.newtag{font-family:var(--label);font-size:11px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;background:var(--coral);color:#1A0A06;border-radius:999px;padding:4px 12px}
+.win .say{font-size:14px;color:var(--muted);margin-top:14px}
+.win h3{font-family:var(--serif);font-weight:500;font-size:clamp(26px,3.4vw,38px);line-height:1.1;letter-spacing:-.01em;margin:4px 0 22px}
+.ba2{display:grid;grid-template-columns:.8fr auto 1.2fr;gap:22px;align-items:center}
+.arrow{font-family:var(--label);font-weight:800;color:var(--coral);font-size:30px}
+.shot{display:block;width:100%;border:1px solid var(--line);border-radius:12px;overflow:hidden;background:#fff;cursor:zoom-in;padding:0;text-align:left;color:#1d2530;position:relative}
+.shot:hover{border-color:var(--blue)}
+.cap{display:flex;justify-content:space-between;gap:10px;font-size:13px;margin-top:10px;color:var(--muted);flex-wrap:wrap}
+.cap b{font-family:var(--label);font-size:11px;letter-spacing:.14em;text-transform:uppercase}
+.cap .bad{color:var(--coraltext)}
+.cap .win-t{color:var(--good)}
+.zoom{position:absolute;right:10px;bottom:10px;background:rgba(11,26,46,.85);color:#fff;border-radius:999px;font-size:11px;font-weight:600;padding:4px 10px}
+.engrow{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:18px}
+.er{padding:20px 22px}
+.er .top{display:flex;align-items:center;gap:10px;font-family:var(--label);font-weight:700}
+.er .big{font-family:var(--label);font-weight:800;font-size:34px;letter-spacing:-.03em;margin-top:8px;line-height:1}
+.er .big small{font-size:15px;color:var(--muted);font-weight:600;letter-spacing:0;margin-left:4px}
+.er .track{height:8px;background:var(--line);border-radius:4px;margin:12px 0 8px;overflow:hidden}
+.er .track i{display:block;height:100%;background:var(--blue);border-radius:4px}
+.er .n{font-size:13px;color:var(--muted)}
+.band{margin-top:18px;padding:22px 26px;background:var(--tint);border:1px solid color-mix(in srgb,var(--blue) 22%,transparent);border-radius:14px;display:flex;gap:26px;align-items:center;flex-wrap:wrap}
+.band b{font-family:var(--label);font-weight:800;font-size:34px;letter-spacing:-.03em;color:var(--bluetext)}
+.band p{flex:1;min-width:240px;font-size:15px}
+
+/* mock screenshots */
+.mock{font-family:Arial,Helvetica,sans-serif;font-size:1em;color:#202124;background:#fff}
+.thumb .mock{font-size:9px}
+.big .mock{font-size:15px}
+.mock .m-bar{display:flex;align-items:center;gap:.8em;padding:.9em 1.1em;border-bottom:1px solid #e3e3e3}
+.mock .g{font-weight:700;font-size:1.5em;color:#4285F4}
+.mock .m-q{flex:1;background:#f1f3f4;border-radius:2em;padding:.5em 1em;font-size:1em}
+.mock .m-rows{padding:1em 1.2em 1.4em}
+.sk{height:.7em;background:#e6e8eb;border-radius:.4em;margin-bottom:.55em}
+.sk.t{height:.95em;background:#c9d3ea;width:60%}
+.sk.w80{width:80%}.sk.w60{width:60%}.sk.w90{width:90%}.sk.w40{width:40%}.sk.w70{width:70%}
+.pack{display:grid;grid-template-columns:repeat(3,1fr);gap:.6em;margin-bottom:1.1em}
+.pack div{background:#f1f3f4;border-radius:.6em;padding:.8em}
+.res{margin-bottom:1.1em}
+.notp{display:inline-block;background:#FDE3DD;color:#B3301A;font-weight:700;border-radius:2em;padding:.35em 1em;font-size:.95em;margin:.4em 0 1em}
+.chat{display:grid;grid-template-columns:7em 1fr;min-height:100%}
+.chat aside{background:#f9f9f9;border-right:1px solid #ececec;padding:1em .8em;font-size:.85em;color:#555}
+.chat aside div{margin-bottom:.9em}
+.chat main{padding:1em 1.4em 1.3em}
+.chat .who{font-weight:700;font-size:1.1em;margin-bottom:1em;display:flex;justify-content:space-between}
+.chat .bubble{margin-left:auto;background:#f1f1f1;border-radius:1.2em;padding:.6em 1em;width:fit-content;max-width:90%;margin-bottom:1.1em}
+.chat ol{margin:.7em 0 0;padding-left:1.4em}
+.chat li{margin-bottom:.8em}
+.chat li b{display:block;margin-bottom:.3em}
+.chat li.me{background:#E7EDFC;border-radius:.6em;padding:.5em .7em;margin-left:-.7em;box-shadow:inset 3px 0 0 #1F4FE0}
+.thumb-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}
+.tg{padding:12px}
+.tg .shot{border-radius:8px}
+.tg .q{font-weight:700;font-size:14px;margin:10px 0 2px;line-height:1.25}
+.tg .st{font-size:12.5px;color:var(--coraltext);font-weight:600}
+.tg .nx{font-size:12px;color:var(--muted)}
+
+/* google panel */
+.gpanel{overflow:hidden}
+.gp-head{display:flex;align-items:center;gap:16px;padding:24px 28px;border-bottom:1px solid var(--line);flex-wrap:wrap}
+.glogo{width:44px;height:44px;border-radius:50%;border:1px solid var(--line);display:grid;place-items:center;font-family:var(--label);font-weight:800;font-size:22px;color:#4285F4;background:#fff;flex:none}
+.gp-head h3{font-family:var(--label);font-weight:700;font-size:20px;letter-spacing:-.01em;flex:1;min-width:240px}
+.gp-head h3 em{font-style:normal;color:var(--coraltext)}
+.gp-head span{font-size:13px;color:var(--muted)}
+.bucket{display:grid;grid-template-columns:170px 1fr;gap:16px;padding:20px 28px;border-bottom:1px solid var(--line)}
+.bucket:last-of-type{border-bottom:0}
+.bk-h{display:flex;gap:12px;align-items:flex-start}
+.badge-n{min-width:36px;height:36px;border-radius:8px;display:grid;place-items:center;font-family:var(--label);font-weight:800;font-size:15px;padding:0 6px;flex:none}
+.bk-h b{display:block;font-size:15px}
+.bk-h span{font-size:13px;color:var(--muted)}
+.terms{display:flex;flex-wrap:wrap;gap:8px}
+.term{display:inline-flex;align-items:center;gap:8px;border:1px solid var(--line);border-radius:999px;padding:6px 14px;font-size:14px;background:var(--paper);text-decoration:none;color:var(--ink)}
+.term:hover{border-color:var(--blue)}
+.term .gg{font-weight:800;color:#4285F4;font-size:13px;font-family:var(--label)}
+.gp-foot{padding:16px 28px;border-top:1px solid var(--line);font-size:13px;color:var(--muted)}
+.rankbar{display:grid;grid-template-columns:repeat(5,1fr);gap:8px;padding:6px 28px 4px}
+.rankbar div{text-align:center;font-size:13px;color:var(--muted)}
+.rankbar b{display:block;font-family:var(--label);font-weight:800;font-size:28px;color:var(--ink)}
+.rankbar i{display:block;height:6px;border-radius:3px;margin-top:8px}
+
+/* charts */
+.chartcard{padding:28px}
+.chartcard svg{width:100%;height:auto;display:block;overflow:visible}
+.legend{display:flex;gap:22px;flex-wrap:wrap;margin-top:18px;font-size:14px}
+.legend span{display:inline-flex;align-items:center;gap:8px}
+.legend i{width:12px;height:12px;border-radius:50%;display:inline-block}
+.legend small{color:var(--muted)}
+.callouts{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:18px}
+.co{padding:16px 20px;font-size:14.5px}
+.co b{font-family:var(--label);font-weight:800;font-size:22px;letter-spacing:-.02em;display:block}
+.note{border-left:3px solid var(--line);padding:4px 0 4px 16px;color:var(--muted);font-size:14px;max-width:64ch;margin-top:22px}
+.life{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:18px}
+.lf{padding:28px 24px;text-align:center}
+.lf .num{font-family:var(--label);font-weight:800;font-size:clamp(46px,6vw,64px);letter-spacing:-.04em;line-height:1}
+.lf .t{font-weight:700;margin-top:8px}
+.lf .s{font-size:13.5px;color:var(--muted);margin-top:2px}
+.lf.l1 .num{color:var(--bluetext)}
+.lf svg{width:30px;height:30px;margin-bottom:12px;color:var(--coraltext)}
+
+/* work */
+.workband{background:var(--ink);color:#F4F1EA;text-align:center;padding:70px 0;position:relative;overflow:hidden;
+  background-image:radial-gradient(700px 300px at 50% 120%,rgba(31,79,224,.35),transparent 70%)}
+.workband h2{font-family:var(--serif);font-weight:500;font-size:clamp(36px,5.4vw,64px);line-height:1;letter-spacing:-.02em;margin-bottom:12px}
+.workband p{color:#B7C3D5;font-size:18px}
+.workband .eyebrow{color:#FF8A72}
+.pr-split,.split{display:grid;grid-template-columns:1.05fr .95fr;gap:40px;align-items:center}
+.pr{padding:30px;border-top:4px solid var(--coral)}
+.pr .tag{font-family:var(--label);font-size:11px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--coraltext);margin-bottom:12px;display:flex;align-items:center;gap:12px}
+.pr .tag::before{content:"";width:22px;height:2px;background:var(--coral)}
+.pr h3{font-family:var(--serif);font-weight:500;font-size:clamp(26px,3vw,34px);line-height:1.1;margin-bottom:14px}
+.pr .meta{font-size:14px;color:var(--muted)}
+.pr .meta b{color:var(--ink)}
+.pr details{margin-top:18px;border-top:1px solid var(--line);padding-top:14px}
+.pr summary{cursor:pointer;font-weight:600;color:var(--bluetext);font-size:14.5px}
+.pr details p{margin-top:12px;font-size:15px;color:var(--muted)}
+.trust h3{font-family:var(--label);font-weight:800;font-size:22px;letter-spacing:-.02em;line-height:1.15;margin-bottom:10px}
+.trust>p{color:var(--muted);margin-bottom:20px}
+.trust ul{list-style:none;margin:0;padding:0;display:grid;gap:16px}
+.trust li{padding-left:22px;position:relative;font-size:15.5px}
+.trust li::before{content:"";position:absolute;left:0;top:.7em;width:10px;height:2px;background:var(--coral)}
+.out3{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:30px}
+.out{padding:20px;text-align:center}
+.out .logo{height:44px;display:grid;place-items:center;margin-bottom:6px;color:var(--ink)}
+.out .logo .wm{color:var(--ink)}
+.out .n{font-weight:700;font-size:15px}
+.out .d{font-family:ui-monospace,Menlo,monospace;font-size:11.5px;color:var(--muted);margin-bottom:12px}
+.out .m{display:flex;justify-content:center;gap:24px;border-top:1px solid var(--line);padding-top:12px}
+.out .m b{display:block;font-family:var(--label);font-weight:800;font-size:19px;letter-spacing:-.02em}
+.out .m span{font-family:var(--label);font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);font-weight:700}
+.reach{background:var(--ink);color:#F4F1EA;border-radius:14px;padding:44px 40px;margin-top:30px;background-image:radial-gradient(600px 300px at 90% -20%,rgba(31,79,224,.4),transparent 70%),radial-gradient(500px 260px at 0% 120%,rgba(255,90,60,.2),transparent 70%)}
+.reach .head{margin-bottom:26px}
+.reach h3{font-family:var(--serif);font-weight:500;font-size:clamp(32px,4.4vw,48px);line-height:1;text-align:center;margin-bottom:10px}
+.reach .sub{text-align:center;color:#B7C3D5;max-width:560px;margin:0 auto 28px}
+.rrow{display:grid;grid-template-columns:170px 1fr 70px;gap:16px;align-items:center;margin-bottom:14px;font-size:14.5px;font-weight:600}
+.rrow .trk{height:10px;background:rgba(244,241,234,.12);border-radius:5px;overflow:hidden}
+.rrow .trk i{display:block;height:100%;border-radius:5px;background:var(--coral)}
+.rrow:nth-child(n+2) .trk i{background:#6C8CF0}
+.rrow b{text-align:right;font-family:var(--label);font-weight:800}
+.reach .cols{font-family:var(--label);font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:#8FA0B8;display:flex;justify-content:space-between;border-bottom:1px solid rgba(244,241,234,.14);padding-bottom:10px;margin-bottom:16px}
+
+.panel{overflow:hidden}
+.panel-h{display:flex;justify-content:space-between;align-items:center;gap:14px;padding:16px 22px;border-bottom:1px solid var(--line);flex-wrap:wrap}
+.panel-h b{font-family:var(--label);font-weight:800;font-size:16px}
+.tools{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.search{font:inherit;font-size:14px;padding:9px 14px;border:1px solid var(--line);border-radius:8px;background:var(--paper);color:var(--ink);min-width:200px}
+.seg{display:inline-flex;border:1px solid var(--line);border-radius:8px;overflow:hidden}
+.seg button{font-size:14px;font-weight:600;border:0;padding:9px 16px;cursor:pointer;background:var(--paper);color:var(--ink)}
+.seg button[aria-pressed="true"]{background:var(--ink);color:var(--paper)}
+:root[data-theme="dark"] .seg button[aria-pressed="true"]{background:var(--blue);color:#fff}
+.scroll-x{overflow-x:auto}
+table{width:100%;border-collapse:collapse;font-size:15px;min-width:560px}
+th{text-align:left;font-family:var(--label);font-size:11px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);padding:12px 22px;background:var(--paper);border-bottom:1px solid var(--line)}
+td{padding:14px 22px;border-bottom:1px solid var(--line);vertical-align:middle}
+td.n{font-weight:600}
+td small{display:block;font-family:ui-monospace,Menlo,monospace;font-size:11.5px;color:var(--muted);font-weight:400}
+.tier{font-family:var(--label);font-size:10.5px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;border-radius:6px;padding:4px 10px;display:inline-block}
+.tier.p{background:var(--coraltint);color:var(--coraltext);border:1px solid color-mix(in srgb,var(--coral) 40%,transparent)}
+.tier.s{background:var(--paper);color:var(--muted);border:1px solid var(--line)}
+.st-live{display:inline-flex;align-items:center;gap:7px;font-weight:600;font-size:13.5px;color:var(--good)}
+.st-live::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--good)}
+.st-wait{display:inline-flex;align-items:center;gap:7px;font-weight:600;font-size:13.5px;color:var(--muted)}
+.st-wait::before{content:"";width:8px;height:8px;border-radius:50%;border:2px solid var(--muted)}
+.view{font-size:13px;font-weight:600;border:1px solid var(--line);border-radius:999px;padding:5px 14px;background:var(--paper);color:var(--ink);text-decoration:none;display:inline-block}
+.view:hover{border-color:var(--blue)}
+.panel-f{display:flex;justify-content:space-between;align-items:center;padding:16px 22px;color:var(--muted);font-size:14px;gap:12px;flex-wrap:wrap}
+.cardsgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;padding:20px}
+.cg{border:1px solid var(--line);border-radius:10px;padding:14px 16px;background:var(--paper)}
+.cg b{display:block;font-size:15px;margin-bottom:8px}
+.cg .d{font-size:13px;color:var(--muted);margin-top:6px}
+.dircount{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-bottom:22px}
+.dc{padding:16px 26px;text-align:center}
+.dc b{font-family:var(--label);font-weight:800;font-size:34px;letter-spacing:-.03em;display:block;line-height:1.1}
+.dc span{font-family:var(--label);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);font-weight:700}
+.submitted{display:flex;gap:10px;flex-wrap:wrap;margin:0 0 18px;justify-content:center;font-size:14px;color:var(--muted);align-items:center}
+.submitted .chipx{border:1px solid var(--line);border-radius:999px;padding:4px 12px;background:var(--card);font-size:13px;color:var(--ink)}
+
+/* actions */
+.tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:20px;justify-content:center}
+.tab{font-size:14px;font-weight:600;cursor:pointer;border:1px solid var(--line);background:var(--card);color:var(--ink);padding:9px 16px;border-radius:999px;display:inline-flex;align-items:center;gap:8px}
+.tab small{opacity:.65;font-size:13px}
+.tab[aria-pressed="true"]{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+:root[data-theme="dark"] .tab[aria-pressed="true"]{background:var(--blue);border-color:var(--blue);color:#fff}
+.acts{display:grid;gap:12px}
+.act{display:grid;grid-template-columns:130px 1fr auto;gap:18px;align-items:center;padding:18px 22px}
+.act .type{font-family:var(--label);font-size:11px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;border-radius:6px;padding:5px 10px;text-align:center;background:var(--tint);color:var(--bluetext)}
+.act .type.post{background:var(--goodtint);color:var(--good)}
+.act .type.pr{background:var(--coraltint);color:var(--coraltext)}
+.act .type.dir{background:var(--paper);border:1px solid var(--line);color:var(--muted)}
+.act p{font-size:15.5px}
+.act .when{font-size:13px;color:var(--muted);white-space:nowrap}
+.sample-pill{font-family:var(--label);font-size:10px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;border:1px dashed var(--coral);color:var(--coraltext);border-radius:999px;padding:2px 8px;margin-left:8px;vertical-align:2px}
+
+/* next */
+.next{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.nx{padding:20px 22px;display:flex;gap:16px;align-items:flex-start}
+.nx .ck{width:28px;height:28px;border-radius:50%;background:var(--tint);color:var(--bluetext);display:grid;place-items:center;flex:none;margin-top:1px}
+.nx .ck svg{width:15px;height:15px}
+.nx p{font-size:15.5px}
+.nx p b{font-weight:700}
+.covered{text-align:center;color:var(--muted);margin-top:24px;font-size:15px}
+
+/* needs */
+.needs{display:grid;grid-template-columns:1fr 1fr;gap:18px;align-items:stretch}
+.need{padding:30px;display:flex;flex-direction:column}
+.need .tagx{font-family:var(--label);font-size:11px;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:var(--coraltext);margin-bottom:10px}
+.need h3{font-family:var(--serif);font-weight:500;font-size:clamp(28px,3.2vw,38px);line-height:1.05;margin-bottom:10px}
+.need>p{color:var(--muted);margin-bottom:20px;font-size:15.5px}
+.vel{display:grid;gap:14px;margin-bottom:20px}
+.vrow{display:grid;grid-template-columns:120px 1fr 80px;gap:12px;align-items:center;font-size:14px}
+.vrow .tr{height:12px;background:var(--line);border-radius:6px;overflow:hidden}
+.vrow .tr i{display:block;height:100%;border-radius:6px}
+.vrow b{font-family:var(--label);font-weight:800;text-align:right;font-size:15px}
+.stat3{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:22px}
+.stat3 div{background:var(--paper);border:1px solid var(--line);border-radius:10px;padding:12px 10px;text-align:center}
+.stat3 b{font-family:var(--label);font-weight:800;font-size:24px;letter-spacing:-.02em;display:block;line-height:1.1}
+.stat3 span{font-size:12px;color:var(--muted)}
+.linkbox{display:flex;gap:8px;margin-top:auto;flex-wrap:wrap}
+.linkbox input{flex:1;min-width:180px;font:inherit;font-size:13.5px;padding:10px 12px;border:1px solid var(--line);border-radius:8px;background:var(--paper);color:var(--ink)}
+.king{font-family:var(--serif);font-style:italic;font-size:20px;color:var(--bluetext);margin:2px 0 16px}
+.drop{border:2px dashed color-mix(in srgb,var(--blue) 45%,transparent);border-radius:12px;padding:26px;text-align:center;margin-bottom:20px;background:var(--tint)}
+.drop b{display:block;font-family:var(--label);font-weight:800;font-size:17px;margin-bottom:4px}
+.drop span{font-size:14px;color:var(--muted)}
+.tips{list-style:none;margin:0 0 22px;padding:0;display:grid;gap:10px;font-size:15px}
+.tips li{padding-left:22px;position:relative}
+.tips li::before{content:"";position:absolute;left:0;top:.7em;width:10px;height:2px;background:var(--coral)}
+
+/* badge */
+.badge-sec{background:var(--ink);color:#F4F1EA;position:relative;overflow:hidden;
+  background-image:radial-gradient(800px 420px at 50% 115%,rgba(255,90,60,.22),transparent 70%),radial-gradient(900px 500px at 100% 0,rgba(31,79,224,.3),transparent 65%)}
+.badge-sec .head p{color:#B7C3D5}
+.badge-sec .eyebrow{color:#FF8A72}
+.badge-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:30px;align-items:center}
+.badge-card{border:1px solid rgba(244,241,234,.25);border-radius:14px;padding:32px;display:flex;align-items:center;gap:24px;background:rgba(255,255,255,.04)}
+.badge-card svg{width:84px;height:84px;flex:none}
+.badge-card .b0{font-family:var(--label);font-size:11px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:#A7B4C7;margin-bottom:6px}
+.badge-card .b1{font-family:var(--label);font-weight:800;font-size:25px;letter-spacing:-.025em;line-height:1.1}
+.badge-card .b2{color:#B7C3D5;font-size:14.5px;margin-top:6px}
+.embed{display:grid;gap:12px}
+.btn-row{display:flex;gap:10px;flex-wrap:wrap}
+.embed pre{margin:0;background:#06101B;border:1px solid rgba(244,241,234,.16);border-radius:8px;padding:14px;font-size:12px;line-height:1.5;color:#C3D0E2;white-space:pre-wrap;word-break:break-all;display:none;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;max-height:260px;overflow:auto}
+.embed pre.open{display:block}
+.embed p{font-size:13.5px;color:#9FB0C6}
+.contact{text-align:center;padding:64px 0 24px}
+.contact h2{font-family:var(--serif);font-weight:500;font-size:clamp(30px,4vw,44px);line-height:1.05;margin-bottom:12px}
+.contact p{color:var(--muted);font-size:17px;margin-bottom:22px}
+footer{padding:24px 0 48px;color:var(--muted);font-size:13.5px;text-align:center}
+footer .lockup{color:var(--ink);justify-content:center;margin-bottom:10px;font-size:16px}
+.sample-bar{background:var(--coral);color:#1A0A06;font-size:13.5px;font-weight:600;text-align:center;padding:8px 16px}
+
+/* modal */
+dialog{border:0;padding:0;border-radius:14px;max-width:min(860px,94vw);width:100%;background:#fff;color:#202124;overflow:hidden}
+dialog::backdrop{background:rgba(6,16,27,.72)}
+dialog .dh{display:flex;justify-content:space-between;align-items:center;padding:14px 18px;border-bottom:1px solid #e3e3e3;font-family:var(--label);font-weight:700;font-size:14px;gap:12px}
+dialog .dh button{border:1px solid #ccd;background:#fff;border-radius:8px;padding:6px 14px;font-weight:600;cursor:pointer}
+dialog .db{max-height:78vh;overflow:auto}
+.toast{position:fixed;left:50%;bottom:calc(24px + env(safe-area-inset-bottom,0px));transform:translateX(-50%) translateY(20px);background:var(--ink);color:var(--paper);padding:11px 18px;border-radius:10px;font-size:14px;opacity:0;pointer-events:none;transition:opacity .2s,transform .2s;z-index:80;max-width:90vw}
+.toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+:root[data-theme="dark"] .toast{background:#F4F1EA;color:#0B1A2E}
+
+@media (max-width:980px){
+  .glance,.pr-split,.split,.needs,.badge-grid,.next{grid-template-columns:1fr}
+  .tiles,.out3{grid-template-columns:repeat(2,1fr)}
+  .state-row,.engrow,.callouts,.life{grid-template-columns:1fr}
+  .thumb-grid{grid-template-columns:repeat(2,1fr)}
+  .ba2{grid-template-columns:1fr}
+  .arrow{transform:rotate(90deg);justify-self:center}
+  .bucket{grid-template-columns:1fr}
+  .cardsgrid{grid-template-columns:1fr 1fr}
+  section{padding:64px 0}
+  .act{grid-template-columns:1fr;gap:8px}
+  .rrow{grid-template-columns:110px 1fr 60px}
+}
+@media (max-width:560px){
+  .wrap{padding:0 18px}
+  .tiles,.out3,.cardsgrid{grid-template-columns:1fr}
+  .thumb-grid{grid-template-columns:1fr}
+  .topbar{flex-direction:column;align-items:flex-start}
+  .badge-card{flex-direction:column;align-items:flex-start}
+  .rankbar{grid-template-columns:repeat(3,1fr)}
+  .reach{padding:30px 20px}
+  .vrow{grid-template-columns:90px 1fr 60px}
+  .stat3{grid-template-columns:1fr}
+}
+@media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}.toast{transition:none}}
+@media print{.menu,.btn,.toast,.sample-bar{display:none!important}section{padding:32px 0}.hero,.reach,.badge-sec,.workband{-webkit-print-color-adjust:exact;print-color-adjust:exact}}
+
+
+
+/* results rows: win first, before as footnote */
+.rw{padding:34px;margin-bottom:20px;display:block}
+.rw .newtag{display:inline-block}
+.rw-p .shot .mock{font-size:12px}
+.rw .newtag.steady{background:var(--tint);color:var(--bluetext)}
+.rw h3{font-family:var(--serif);font-weight:500;font-size:clamp(28px,3.4vw,42px);line-height:1.06;letter-spacing:-.01em;margin:16px 0 22px;max-width:22em}
+.rw h3 .hl{color:var(--bluetext);font-style:italic}
+.rw h3 .q{display:block;margin-top:8px}
+.rw-p .shot{box-shadow:0 24px 50px -30px rgba(11,26,46,.45)}
+.rw-before{display:flex;align-items:center;gap:16px;margin-top:20px;padding-top:18px;border-top:1px solid var(--line);font-size:14px;color:var(--muted)}
+.rw-before .mini{width:118px;flex:none}
+.rw-before .mini .shot{border-radius:8px}
+.rw-before .mini .zoom{display:none}
+.rw-before b{display:block;font-family:var(--label);font-size:11px;letter-spacing:.14em;text-transform:uppercase}
+.rw-before b.bad{color:var(--coraltext)}
+.alsoon{margin-top:26px;text-align:center}
+.alsoon>b{display:block;font-family:var(--label);font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);margin-bottom:14px}
+.alsoon .terms{justify-content:center}
+.term .pos{font-family:var(--label);font-weight:800;font-size:12px;color:var(--good);margin-left:2px}
+.hit{border-left:4px solid #1F4FE0;background:#E7EDFC;border-radius:.4em;padding:.8em 1em;margin-bottom:1.2em;position:relative}
+.hit .hs{font-size:.85em;color:#5b6678;margin-bottom:.3em}
+.hit .ht{color:#1a3fb5;font-size:1.15em;line-height:1.25;margin-bottom:.6em}
+.hit .rk{position:absolute;right:.8em;top:.7em;background:#1F4FE0;color:#fff;font-weight:700;font-size:.85em;border-radius:2em;padding:.15em .8em}
+/* standing wins (slow month) */
+.steady-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.sw{padding:22px;display:grid;grid-template-columns:120px 1fr;gap:18px;align-items:center}
+.sw .shot{border-radius:8px}.sw .zoom{display:none}
+.sw h4{font-family:var(--label);font-weight:700;font-size:15px;line-height:1.3;margin-bottom:4px}
+.sw h4 .hl{color:var(--bluetext)}
+.sw span{font-size:13px;color:var(--muted)}
+/* foundation card (no wins yet) */
+.found{padding:34px;display:grid;grid-template-columns:1.1fr .9fr;gap:34px;align-items:center;border-top:4px solid var(--blue)}
+.found h3{font-family:var(--serif);font-weight:500;font-size:clamp(28px,3.4vw,40px);line-height:1.06;margin-bottom:12px}
+.found>div>p{color:var(--muted);margin-bottom:18px}
+.found ul{list-style:none;margin:0;padding:0;display:grid;gap:12px}
+.found li{padding-left:22px;position:relative;font-size:15px}
+.found li::before{content:"";position:absolute;left:0;top:.7em;width:10px;height:2px;background:var(--coral)}
+.found .built{display:grid;gap:10px}
+.found .bt{display:flex;justify-content:space-between;align-items:center;border:1px solid var(--line);border-radius:10px;padding:12px 16px;background:var(--paper);font-size:14.5px}
+.found .bt b{font-family:var(--label);font-weight:800;font-size:22px;color:var(--bluetext)}
+.sample-bar button{font:inherit;font-weight:700;margin-left:12px;border:1px solid #1A0A06;background:#1A0A06;color:#fff;border-radius:999px;padding:3px 12px;cursor:pointer;font-size:12.5px}
+@media (max-width:980px){.steady-grid,.found{grid-template-columns:1fr}}
+
+/* illustrations */
+.ill{width:150px;height:110px;margin:0 auto 14px}
+.ill.left{margin:0 0 14px}
+.ill svg{width:100%;height:100%;display:block;overflow:visible}
+.h2l{font-family:var(--serif);font-weight:500;font-size:clamp(32px,4.4vw,50px);line-height:1.02;letter-spacing:-.02em;margin:14px 0 14px}
+.pl{color:var(--muted);font-size:17px;margin-bottom:22px;max-width:36em}
+/* inbox */
+.inboxcard{padding:0;overflow:hidden}
+.ib-top{display:flex;justify-content:space-between;align-items:center;padding:16px 20px;border-bottom:1px solid var(--line);font-family:var(--label);font-weight:800}
+.ib-badge{background:var(--coral);color:#1A0A06;font-size:12px;letter-spacing:.08em;text-transform:uppercase;border-radius:999px;padding:4px 12px}
+.ib-row{display:grid;grid-template-columns:40px 1fr auto;gap:14px;align-items:center;padding:14px 20px;border-bottom:1px solid var(--line);font-size:14px;color:var(--muted)}
+.ib-row.unread{background:var(--tint)}
+.ib-row.unread b{color:var(--ink)}
+.ib-row b{display:block;font-weight:700;font-size:15px}
+.ib-row div span{display:block}
+.ib-row em{font-style:normal;font-size:12.5px;white-space:nowrap}
+.av{width:40px;height:40px;border-radius:50%;background:var(--blue);color:#fff;display:grid;place-items:center;font-family:var(--label);font-weight:800;font-size:16px}
+.av.done{background:var(--line);color:var(--muted)}
+.ib-foot{padding:14px 20px;font-size:13.5px;color:var(--muted)}
+/* newsstand */
+.newsstand{display:grid;grid-template-columns:repeat(6,1fr);grid-auto-rows:150px;gap:12px;margin-top:22px;grid-auto-flow:dense}
+.np{background:#FBF9F3;border:1px solid var(--line);border-radius:4px;padding:14px 14px 12px;display:flex;flex-direction:column;position:relative;overflow:hidden;color:#0B1A2E;text-decoration:none}
+:root[data-theme="dark"] .np{background:#F4F1EA}
+.np.big{grid-column:span 2;grid-row:span 2}
+.np .mh{font-size:15px;line-height:1.1;border-bottom:2px solid #0B1A2E;padding-bottom:6px;margin-bottom:8px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.np.big .mh{font-size:26px;padding-bottom:10px;margin-bottom:12px}
+.np .mh.s1{font-family:var(--serif);font-weight:600;text-transform:uppercase;letter-spacing:.02em}
+.np .mh.s2{font-family:var(--label);font-weight:800;letter-spacing:-.03em}
+.np .mh.s3{font-family:var(--serif);font-style:italic;font-weight:500}
+.np .mh.s4{font-family:var(--label);font-weight:600;text-transform:uppercase;letter-spacing:.14em;font-size:12px}
+.np.big .mh.s4{font-size:18px}
+.np .dl{font-family:var(--label);font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;color:#6B7684;margin-bottom:8px}
+.np .hl{font-family:var(--serif);font-weight:600;font-size:12.5px;line-height:1.25;color:#0B1A2E;margin-bottom:6px}
+.np.big .hl{font-size:19px;margin-bottom:10px}
+.np .sk{background:#DCD8CE;height:5px;margin-bottom:4px}
+.np .sk.t{display:none}
+.np .cols{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.np .open{position:absolute;right:10px;bottom:10px;font-family:var(--label);font-size:10px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--blue);background:#fff;border:1px solid var(--line);border-radius:999px;padding:4px 9px;opacity:0;transition:opacity .15s}
+.np:hover .open,.np:focus-visible .open{opacity:1}
+.np.more{background:var(--ink);color:#F4F1EA;align-items:center;justify-content:center;text-align:center;border-color:var(--ink)}
+.np.more b{font-family:var(--label);font-weight:800;font-size:34px;letter-spacing:-.03em;line-height:1}
+.np.more span{font-size:13px;color:#B7C3D5;margin-top:4px}
+/* technical board */
+.tech{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.tk{padding:24px;display:flex;flex-direction:column;gap:10px}
+.tk .ill{width:100%;height:80px;margin:0 0 4px}
+.tk h3{font-family:var(--label);font-weight:800;font-size:17px;letter-spacing:-.01em;line-height:1.2}
+.tk p{font-size:14.5px;color:var(--muted);flex:1}
+.tk .st{display:inline-flex;align-items:center;gap:8px;font-family:var(--label);font-size:11px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;border-radius:999px;padding:5px 12px;width:fit-content}
+.tk .st.done{background:var(--goodtint);color:var(--good)}
+.tk .st.prog{background:var(--tint);color:var(--bluetext)}
+.tk .st.sched{background:var(--paper);color:var(--muted);border:1px solid var(--line)}
+/* reviews + images */
+.qrbox{display:grid;grid-template-columns:150px 1fr;gap:18px;align-items:center;margin:4px 0 20px;padding:18px;border:1px solid var(--line);border-radius:12px;background:var(--paper)}
+.qrbox .qr{width:150px;height:150px;padding:8px;border-radius:10px;background:#fff;display:block}
+.qrbox .qr img{display:block;width:100%;height:100%;image-rendering:pixelated}
+.qrbox>div>b{display:block;font-family:var(--label);font-weight:800;font-size:16px;margin-bottom:6px}
+.qrbox>div>p{font-size:14px;color:var(--muted);margin-bottom:12px}
+.howto{border-top:1px solid var(--line);padding-top:18px;margin-top:auto}
+.howto>b{display:block;font-family:var(--label);font-weight:800;font-size:15px;margin-bottom:10px}
+.howto ol{margin:0;padding-left:20px;display:grid;gap:10px;font-size:14.5px}
+.howto strong{font-weight:700}
+.cred{display:grid;grid-template-columns:1.5fr 1fr;gap:10px;margin-bottom:12px}
+.cred span{display:block;font-family:var(--label);font-size:11px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-bottom:6px}
+.cred input{width:100%;font:inherit;font-size:14px;padding:10px 12px;border:1px solid var(--line);border-radius:8px;background:var(--paper);color:var(--ink)}
+.cred input#imgPass{font-family:ui-monospace,Menlo,monospace;font-weight:700;letter-spacing:.06em}
+/* badge preview, same markup as embed */
+.lair-badge{display:inline-flex;align-items:center;gap:14px;padding:14px 20px 14px 16px;background:#0B1A2E;color:#F4F1EA;border:1px solid #1F4FE0;border-radius:10px;text-decoration:none;font-family:'Hanken Grotesk',Arial,sans-serif}
+.lair-badge svg{width:40px;height:40px;flex:none}
+.lair-badge .lb1{display:block;font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:#A7B4C7;margin-bottom:3px}
+.lair-badge .lb2{display:block;font-weight:700;font-size:16px;line-height:1.2}
+.lair-badge .lb3{display:block;font-size:12px;color:#A7B4C7;margin-top:3px}
+#badgePreview{display:flex;flex-direction:column;align-items:flex-start;gap:12px}
+#badgePreview .pv{font-family:var(--label);font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:#8FA0B8}
+.qrbig{padding:28px;background:#fff;text-align:center}
+.qrbig img{width:min(70vw,420px);height:auto;image-rendering:pixelated}
+.qrbig p{margin-top:12px;font-size:14px;color:#5B6878}
+@media (max-width:980px){.newsstand{grid-template-columns:repeat(4,1fr)}.tech{grid-template-columns:1fr 1fr}}
+@media (max-width:560px){.newsstand{grid-template-columns:repeat(2,1fr);grid-auto-rows:130px}.tech{grid-template-columns:1fr}.qrbox,.cred{grid-template-columns:1fr}.ill{width:120px;height:90px}}
+
+/* counts */
+.counts{display:flex;justify-content:center;gap:10px;margin-top:18px}
+.cnt{display:inline-flex;align-items:center;gap:8px;border:1px solid var(--line);border-radius:999px;padding:7px 16px;font-size:14px;background:var(--card)}
+.cnt b{font-family:var(--label);font-weight:800;font-size:18px}
+.cnt.live b{color:var(--good)}.cnt.wait b{color:var(--muted)}
+/* directory wall */
+.dirwall{display:grid;grid-template-columns:repeat(6,1fr);grid-auto-rows:150px;gap:12px;grid-auto-flow:dense}
+.dt{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px;display:flex;flex-direction:column;position:relative;overflow:hidden;color:var(--ink);text-decoration:none;transition:transform .15s,box-shadow .15s}
+.dt:hover{transform:translateY(-2px);box-shadow:0 14px 30px -18px rgba(11,26,46,.5)}
+.dt.big{grid-column:span 2;grid-row:span 2;padding:18px}
+.dt.pend{opacity:.7}
+.dt.pend .dt-list{filter:grayscale(1)}
+.dt-top{display:flex;align-items:center;gap:9px;margin-bottom:10px;min-width:0}
+.dt-top>div{min-width:0;flex:1}
+.dt-top b{display:block;font-family:var(--label);font-weight:800;font-size:13px;line-height:1.1;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.dt.big .dt-top b{font-size:20px}
+.dt-top span{display:block;font-size:10px;color:var(--muted);font-family:ui-monospace,Menlo,monospace;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.lm{width:30px;height:30px;border-radius:8px;flex:none;display:grid;place-items:center;color:#fff;font-family:var(--label);font-weight:800;font-size:12px;letter-spacing:-.02em}
+.dt.big .lm{width:44px;height:44px;font-size:17px;border-radius:11px}
+.dt-list{background:var(--paper);border:1px solid var(--line);border-radius:6px;padding:8px 9px;flex:1;overflow:hidden}
+.dt-list .sk{background:#D6D0C2;height:4px;margin-bottom:4px}
+.dt-name{font-weight:700;font-size:9.5px;line-height:1.2;margin-bottom:3px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.dt.big .dt-name{font-size:14px}
+.dt-stars{color:#E9A23B;font-size:9px;letter-spacing:1px;margin-bottom:5px}
+.dt.big .dt-stars{font-size:13px}
+.dt-st{margin-left:auto;flex:none;font-family:var(--label);font-size:9.5px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;border-radius:999px;padding:3px 8px}
+.dt-st.live{background:var(--goodtint);color:var(--good)}
+.dt-st.wait{background:var(--paper);color:var(--muted);border:1px solid var(--line)}
+/* timeline */
+.timeline{position:relative;max-width:760px;margin:0 auto;padding-left:0}
+.timeline::before{content:"";position:absolute;left:96px;top:8px;bottom:8px;width:2px;background:var(--line)}
+.tl{display:grid;grid-template-columns:76px 40px 1fr;align-items:center;gap:0;margin-bottom:12px}
+.tl-d{font-family:var(--label);font-weight:700;font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);text-align:right}
+.tl-dot{width:14px;height:14px;border-radius:50%;border:3px solid var(--card);background:var(--blue);justify-self:center;box-shadow:0 0 0 2px var(--line)}
+.tl-dot.k-post{background:var(--good)}.tl-dot.k-pr{background:var(--coral)}.tl-dot.k-dir{background:var(--muted)}.tl-dot.k-review{background:#E9A23B}.tl-dot.k-photo{background:var(--blue)}
+.tl-c{display:grid;grid-template-columns:54px 1fr auto;gap:14px;align-items:center;padding:10px 14px}
+.tl-t{display:block;font-family:var(--label);font-size:10.5px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-bottom:2px}
+.tl-c b{font-weight:600;font-size:15px}
+.mt{width:54px;height:42px;border:1px solid var(--line);border-radius:6px;background:var(--paper);padding:5px;overflow:hidden}
+.mt .sk{height:3px;margin-bottom:3px;background:#D6D0C2}
+.mt-img{height:14px;border-radius:3px;background:var(--blue);margin-bottom:4px}
+.mt-h{height:5px;background:var(--ink);margin-bottom:4px}
+.mt-stars{color:#E9A23B;font-size:8px;letter-spacing:.5px;margin-bottom:3px;line-height:1}
+.mt-pin{width:10px;height:10px;border-radius:50% 50% 50% 0;background:var(--coral);transform:rotate(-45deg);margin:2px 0 6px 4px}
+.mt.grid{display:grid;grid-template-columns:1fr 1fr;gap:3px}
+.mt.grid i{display:block;background:var(--blue);opacity:.75;border-radius:2px}
+/* polish */
+.card{box-shadow:0 1px 2px rgba(11,26,46,.04)}
+.hero-main{padding:64px 0 48px}
+.head{margin-bottom:40px}
+.np{box-shadow:inset 0 0 0 1px rgba(255,255,255,.6);transition:transform .15s,box-shadow .15s}
+.np:hover{transform:translateY(-2px);box-shadow:0 14px 30px -18px rgba(11,26,46,.5)}
+.g-card{min-height:190px}
+.sub-h{margin-top:56px}
+@media (max-width:980px){.dirwall{grid-template-columns:repeat(4,1fr)}}
+@media (max-width:560px){.dirwall{grid-template-columns:repeat(2,1fr);grid-auto-rows:140px}.timeline::before{left:12px}.tl{grid-template-columns:1fr;gap:6px}.tl-d{text-align:left;padding-left:30px}.tl-dot{justify-self:start;margin-left:5px}.tl-c{grid-template-columns:54px 1fr;margin-left:30px}.tl-c .view{grid-column:2}}
+</style>
+</head>
+<style>
+.dt:not(.big) .dt-st{font-size:0;width:9px;height:9px;padding:0;border-radius:50%;border:0}
+.dt:not(.big) .dt-st.live{background:var(--good)}
+.dt:not(.big) .dt-st.wait{background:var(--line)}
+.dt-map{height:46px;border-radius:5px;margin-bottom:8px;background:#E7EDFC;position:relative;overflow:hidden;background-image:linear-gradient(90deg,rgba(31,79,224,.12) 1px,transparent 1px),linear-gradient(rgba(31,79,224,.12) 1px,transparent 1px);background-size:14px 14px}
+.dt-map i{position:absolute;left:50%;top:50%;width:12px;height:12px;border-radius:50% 50% 50% 0;background:var(--coral);transform:translate(-50%,-70%) rotate(-45deg);box-shadow:0 0 0 2px #fff}
+</style><style>
+.modes{display:inline-flex;gap:6px;flex-wrap:wrap;margin-left:8px;vertical-align:middle}
+.modes button{font:inherit;font-weight:700;border:1px solid #1A0A06;background:transparent;color:#1A0A06;border-radius:999px;padding:3px 11px;cursor:pointer;font-size:12.5px;margin:0}
+.modes button[aria-pressed="true"]{background:#1A0A06;color:#fff}
+.pause{padding:30px;border-top:4px solid var(--coral);max-width:720px;margin:0 auto}
+.pause h3{font-family:var(--serif);font-weight:500;font-size:clamp(26px,3.2vw,36px);line-height:1.06;margin-bottom:10px}
+.pause p{color:var(--muted);font-size:15.5px}
+.ib-empty{padding:40px 24px;text-align:center;color:var(--muted);font-size:15px}
+.ib-empty b{display:block;font-family:var(--label);font-weight:800;font-size:18px;color:var(--ink);margin-bottom:6px}
+.morewins{text-align:center;margin-top:18px}
+.morewins b{display:inline-block;font-family:var(--label);font-weight:800;font-size:15px;background:var(--tint);color:var(--bluetext);border-radius:999px;padding:9px 20px}
+.engs .eng{width:26px;height:26px}
+</style><style>
+/* preview bar groups */
+.sample-bar{display:flex;justify-content:center;gap:18px;flex-wrap:wrap;align-items:center}
+.sample-bar .grp{display:inline-flex;align-items:center;gap:6px}
+.sample-bar .grp>span{font-size:12px;letter-spacing:.12em;text-transform:uppercase;font-weight:800;margin-right:4px}
+.sample-bar button{font:inherit;font-weight:700;border:1px solid #1A0A06;background:transparent;color:#1A0A06;border-radius:999px;padding:3px 11px;cursor:pointer;font-size:12.5px;margin:0}
+.sample-bar button[aria-pressed="true"]{background:#1A0A06;color:#fff}
+.sample-bar button:disabled{opacity:.35;cursor:not-allowed}
+/* locks */
+.locked{position:relative;border-radius:14px;overflow:hidden}
+.locked>.lk-body{filter:blur(4px);opacity:.55;pointer-events:none;user-select:none}
+.lk-over{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;text-align:center;padding:24px;background:rgba(244,241,234,.35)}
+:root[data-theme="dark"] .lk-over{background:rgba(9,19,31,.45)}
+.lk-over .lk{width:56px;height:56px;border-radius:50%;background:var(--ink);color:#fff;display:grid;place-items:center;margin-bottom:4px}
+.lk-over .lk svg{width:24px;height:24px}
+.lk-over b{font-family:var(--label);font-weight:800;font-size:20px;letter-spacing:-.01em;color:var(--ink)}
+.lk-over span{font-size:14px;color:var(--muted);max-width:34em}
+.lk-over .btn{margin-top:8px}
+.badge-sec .lk-over b{color:#fff}
+/* locked chips */
+.tab.lockchip{opacity:.6;border-style:dashed}
+.tab.lockchip svg{width:12px;height:12px}
+/* reviews */
+.revgrid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.revcard{padding:28px;min-height:180px}
+#tdIn,#rrIn{display:grid;grid-template-columns:120px 1fr;gap:22px;align-items:center}
+.revcard h3{font-family:var(--label);font-weight:800;font-size:19px;letter-spacing:-.01em;margin-bottom:6px}
+.revcard p{font-size:14.5px;color:var(--muted)}
+.revcard .on{display:inline-flex;align-items:center;gap:8px;margin-top:12px;font-family:var(--label);font-size:11px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--good)}
+.revcard .on i{width:9px;height:9px;border-radius:50%;background:var(--good);box-shadow:0 0 0 0 rgba(17,122,77,.5);animation:pulse 1.8s infinite}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(17,122,77,.45)}100%{box-shadow:0 0 0 10px rgba(17,122,77,0)}}
+.emblem{width:120px;height:120px;position:relative}
+.emblem svg{width:100%;height:100%;overflow:visible}
+.emblem .ring{animation:spin 14s linear infinite;transform-origin:50% 50%}
+@keyframes spin{to{transform:rotate(360deg)}}
+.emblem text{font-family:var(--label);font-weight:800;font-size:9.5px;letter-spacing:.2em;fill:var(--bluetext)}
+.emblem.off .ring{animation:none}
+.emblem.off text{fill:var(--muted)}
+@media (prefers-reduced-motion:reduce){.emblem .ring{animation:none}.revcard .on i{animation:none}}
+@media (max-width:980px){.revgrid{grid-template-columns:1fr}}
+@media (max-width:560px){#tdIn,#rrIn{grid-template-columns:1fr}}
+.g3 .num small{color:var(--good)}
+</style><style>.revcard .locked,.need .locked{min-height:230px}.lk-over{gap:6px}.lk-over .lk{width:46px;height:46px}.lk-over .lk svg{width:20px;height:20px}.need .lk-body{min-height:230px}</style>
+<style>
+.locked{--lkbg:var(--paper)}
+.card .locked{--lkbg:var(--card)}
+.locked>.lk-body{filter:none;opacity:1;pointer-events:none;user-select:none;padding-bottom:150px}
+.lk-over{justify-content:flex-end;padding:120px 24px 22px;background:linear-gradient(to bottom,rgba(0,0,0,0) 0%,color-mix(in srgb,var(--lkbg) 70%,transparent) 42%,var(--lkbg) 70%)}
+:root[data-theme="dark"] .lk-over{background:linear-gradient(to bottom,rgba(0,0,0,0) 0%,color-mix(in srgb,var(--lkbg) 70%,transparent) 42%,var(--lkbg) 70%)}
+.lk-over .lk{margin-bottom:0}
+.revcard .locked,.need .locked{min-height:0}.need .lk-body{min-height:0}
+.locked .tech{pointer-events:none}
+</style>
+<style>
+.lk-over,:root[data-theme="dark"] .lk-over{background:linear-gradient(to bottom,rgba(0,0,0,0) 0,rgba(0,0,0,0) calc(100% - 215px),color-mix(in srgb,var(--lkbg) 80%,transparent) calc(100% - 150px),var(--lkbg) calc(100% - 95px))}
+.locked>.lk-body{padding-bottom:165px}
+.revcard .lk-body{padding-bottom:175px}
+</style>
+<style>.revcard .lk-body{padding-bottom:200px}.lk-over,:root[data-theme="dark"] .lk-over{background:linear-gradient(to bottom,rgba(0,0,0,0) 0,rgba(0,0,0,0) calc(100% - 200px),color-mix(in srgb,var(--lkbg) 85%,transparent) calc(100% - 150px),var(--lkbg) calc(100% - 110px))}</style>
+<style>@media (max-width:560px){.revcard .lk-body{padding-bottom:230px}.locked>.lk-body{padding-bottom:190px}}</style>
+<style>
+.edu-chart h3{font-family:var(--serif);font-weight:500;font-size:clamp(24px,3vw,32px);line-height:1.1;margin-bottom:6px}
+.edu-chart>p{color:var(--muted);font-size:15px;margin-bottom:18px;max-width:60ch}
+.edu-refs{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:16px}
+.ref{padding:22px;display:flex;flex-direction:column;gap:8px}
+.ref .ill{width:100%;height:76px;margin:0 0 4px}
+.ref b{font-family:var(--label);font-weight:800;font-size:19px;letter-spacing:-.01em;line-height:1.15}
+.ref p{font-size:14.5px;color:var(--muted);flex:1}
+.ref a{font-size:13px;color:var(--bluetext);font-weight:600;text-decoration:none}
+.ref a:hover{text-decoration:underline}
+@media (max-width:980px){.edu-refs{grid-template-columns:1fr}}
+</style><style>
+.morewins{display:flex;flex-direction:column;align-items:center;gap:8px}
+.morewins .mw-n{font-size:13px;color:var(--muted)}
+.edu-mobile{display:none}
+.edu-steps{list-style:none;margin:0;padding:0 0 0 22px;border-left:2px solid var(--line);display:grid;gap:18px}
+.edu-steps li{position:relative;padding-left:4px}
+.edu-steps li::before{content:"";position:absolute;left:-29px;top:4px;width:12px;height:12px;border-radius:50%;background:var(--line);border:2px solid var(--card)}
+.edu-steps li.done::before{background:var(--blue)}
+.edu-steps li.cur::before{background:var(--coral);box-shadow:0 0 0 4px rgba(255,90,60,.25)}
+.es-m{display:block;font-family:var(--label);font-size:11px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.edu-steps b{display:block;font-family:var(--label);font-weight:800;font-size:17px;margin:2px 0 4px}
+.edu-steps b em{font-style:normal;font-size:11px;background:var(--coral);color:#1A0A06;border-radius:999px;padding:2px 9px;margin-left:8px;letter-spacing:.1em;text-transform:uppercase;vertical-align:2px}
+.edu-steps p{font-size:14.5px;color:var(--muted)}
+.edu-cites{margin-top:18px;padding-top:14px;border-top:1px solid var(--line);display:grid;gap:6px}
+.edu-cites b{font-family:var(--label);font-size:11px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.edu-cites a{font-size:13.5px;color:var(--bluetext);text-decoration:none}
+.edu-cites a:hover{text-decoration:underline}
+@media (max-width:640px){.edu-desktop{display:none}.edu-mobile{display:block}}
+</style><style>
+.edu-key{list-style:none;margin:14px 0 0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:10px 14px}
+.edu-key li{display:flex;gap:10px;align-items:flex-start}
+.edu-key b{width:26px;height:26px;border-radius:50%;background:var(--card);border:1px solid var(--line);display:grid;place-items:center;font-family:var(--label);font-weight:800;font-size:13px;flex:none}
+.edu-key li.top b{background:var(--blue);color:#fff;border-color:var(--blue)}
+.edu-key strong{display:block;font-family:var(--label);font-weight:800;font-size:14px;line-height:1.2}
+.edu-key span{font-size:12.5px;color:var(--muted)}
+</style><body>
+<div class="sample-bar" id="modes"></div>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="topbar">
+      <a class="lockup" href="https://localairegistry.com" aria-label="Local AI Registry">
+        <svg viewBox="0 0 100 100" role="img" aria-hidden="true"><path d="M50 10 L92 86 L64 86 L50 58 L36 86 L8 86 Z" fill="#4F78F0"/><path d="M50 10 L61 30 L39 30 Z" fill="#FF5A3C"/></svg>
+        Local AI Registry
+      </a>
+      <div class="top-actions">
+        <a class="btn ghost" href="https://localairegistry.com/biz/ca/rancho-cucamonga/la-grazia-aesthetics-and-wellness-center-rancho-cucamonga-ca" target="_blank" rel="noopener">Your public profile</a>
+        <div style="position:relative">
+          <button class="btn ghost" id="exportBtn" aria-haspopup="true" aria-expanded="false">Export</button>
+          <div class="menu" id="exportMenu" role="menu">
+            <button role="menuitem" id="doPrint">Print or save as PDF</button>
+            <button role="menuitem" id="doLink">Copy report link</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-main">
+      <p class="over" id="heroOver"></p>
+      <h1>La Grazia Aesthetics &amp; Wellness Center</h1>
+      <p class="lede" id="heroLede"></p>
+      <span class="pill-ok" style="margin-top:26px" id="tierPill"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3.2 3.2L13 5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Verified report</span>
+    </div>
+
+    <div class="seen" id="seen"></div>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<section id="state">
+  <div class="wrap">
+    <div class="head">
+      <div class="ill" data-ill="ai"></div>
+      <div class="eyebrow">The state of AI search</div>
+      <h2>People now ask AI who to trust.</h2>
+      <p>Three things changed this month in how AI picks local businesses. We adjust your plan every month to match.</p>
+    </div>
+    <div class="state-row">
+      <article class="card sc"><h3>Yelp now feeds ChatGPT's local recommendations</h3><div class="fy">Your Yelp reviews now shape what ChatGPT says about you.</div><a href="https://grailstar.com/blog/yelp-chatgpt-local-recommendations" target="_blank" rel="noopener">Grailstar, Jul 27, 2026</a></article>
+      <article class="card sc"><h3>Google's AI Mode answers without sending clicks</h3><div class="fy">The AI's answer is the visit. Being named in it matters most.</div><a href="https://www.theanswerengine.ai/blog/how-google-ai-mode-changes-local-business-discovery" target="_blank" rel="noopener">The Answer Engine, Mar 25, 2026</a></article>
+      <article class="card sc"><h3>ChatGPT recommends businesses it can verify</h3><div class="fy">Matching listings and press mentions are the evidence it checks.</div><a href="https://cmc-seo.com/chatgpt-recommends-local-businesses/" target="_blank" rel="noopener">CMC SEO, Jul 28, 2026</a></article>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="results">
+  <div class="wrap">
+    <div class="head">
+      <div class="ill" data-ill="win"></div>
+      <div class="eyebrow">Your results</div>
+      <h2 id="resH"></h2>
+    </div>
+    <div class="glance" id="glance"></div>
+    <h3 class="sub-h" id="winsH"></h3>
+    <div id="wins"></div>
+  </div>
+</section>
+
+<section id="inbox">
+  <div class="wrap">
+    <div class="split">
+      <div>
+        <div class="ill left" id="ibIll"></div>
+        <div class="eyebrow">People reached out</div>
+        <h2 class="h2l">Customers are messaging you on your profile.</h2>
+        <p class="pl">When someone finds you through AI or Google, many land on your Local AI Registry page and ask a question or request an appointment. Those messages wait in your inbox until you answer.</p>
+        <a class="btn primary" href="https://localairegistry.com/login" target="_blank" rel="noopener">Open your inbox</a>
+      </div>
+      <div class="card inboxcard" id="ibCard"></div>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="ai-trend">
+  <div class="wrap">
+    <div class="head">
+      <div class="ill" data-ill="chart"></div>
+      <div class="eyebrow">AI visibility over time</div>
+      <h2>Named by AI, week by week.</h2>
+      <p>Every week we ask the assistants your customers use the same questions, and count how often they name you.</p>
+    </div>
+    <div class="card chartcard"><div id="aiChart"></div><div class="legend" id="aiLegend"></div></div>
+  </div>
+</section>
+
+<section id="traffic">
+  <div class="wrap">
+    <div id="trafficBlock">
+    <div class="head">
+      <div class="eyebrow">Traffic over time</div>
+      <h2>Visits to your website.</h2>
+    </div>
+    <div class="card chartcard"><div id="trafficChart"></div></div>
+    </div>
+    <h3 class="sub-h">Since day one.</h3>
+    <div class="life">
+      <div class="card lf l1"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 3l5 15 2.2-5.8L18 10 5 3z"/></svg><div class="num">34</div><div class="t">Clicks to your website</div></div>
+      <div class="card lf"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg><div class="num">47<span class="ph">*</span></div><div class="t">Phone calls</div></div>
+      <div class="card lf"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s7-6.2 7-11.5A7 7 0 0 0 5 9.5C5 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><div class="num">92<span class="ph">*</span></div><div class="t">Direction requests</div></div>
+    </div>
+  </div>
+</section>
+
+<div class="workband" id="workband">
+  <div class="wrap">
+    <div class="eyebrow">The work</div>
+    <h2 id="wbH">Here is what we did for you.</h2>
+    <p id="wbP">Every section from here is work we carried out this month.</p>
+  </div>
+</div>
+
+<section id="press" hidden>
+  <div class="wrap">
+    <div class="head">
+      <div class="ill" data-ill="press"></div>
+      <div class="eyebrow" id="pressEye">Press coverage</div>
+      <h2 id="pressH"></h2>
+      <p id="pressP">One press release, written about what you do best, published across the news. Every article links back to your website. This is the evidence AI checks before it names you.</p>
+    </div>
+    <article class="card pr" id="prCard">
+      <div class="tag">The release</div>
+      <h3>La Grazia Aesthetics &amp; Wellness Center Details Its Nurse-Led Microneedling Program in Rancho Cucamonga</h3>
+      <p class="meta" id="prMeta"></p>
+      <details><summary>Read the release we sent</summary><p>Dateline Rancho Cucamonga, Calif., August 11, 2026. The release explains how microneedling works, why the person performing it matters, and how La Grazia delivers it through a licensed registered nurse under medical supervision. It closes with a quote from the center, an About section and the Arrow Route contact details.</p></details>
+    </article>
+    <div id="pressWrap"><div class="newsstand" id="newsstand"></div></div>
+  </div>
+</section>
+
+<section class="alt" id="directories">
+  <div class="wrap">
+    <div class="head">
+      <div class="ill" data-ill="dir"></div>
+      <div class="eyebrow">Where you're listed</div>
+      <h2>Every directory we put you in.</h2>
+      <p>AI trusts a business when every listing says the same thing: same name, same address, same phone, same hours.</p>
+      <div class="counts" id="dirCounts"></div>
+    </div>
+    <div class="dirwall" id="dirwall"></div>
+  </div>
+</section>
+
+<section id="actions">
+  <div class="wrap">
+    <div class="head">
+      <div class="ill" data-ill="actions"></div>
+      <div class="eyebrow">Completed actions</div>
+      <h2 id="actH">Everything we did, day by day.</h2>
+    </div>
+    <div class="tabs" id="actTabs" role="group" aria-label="Filter actions"></div>
+    <div class="timeline" id="timeline"></div>
+  </div>
+</section>
+
+<section class="alt" id="reviews">
+  <div class="wrap">
+    <div class="head">
+      <div class="ill" data-ill="shield"></div>
+      <div class="eyebrow">Reviews</div>
+      <h2>Your reputation, watched around the clock.</h2>
+    </div>
+    <div class="revgrid">
+      <div class="card revcard" id="takedown"></div>
+      <div class="card revcard" id="revreply"></div>
+    </div>
+  </div>
+</section>
+
+<section id="technical">
+  <div class="wrap">
+    <div class="head">
+      <div class="ill" data-ill="tech"></div>
+      <div class="eyebrow">The technical foundation</div>
+      <h2>The work under the hood.</h2>
+      <p>This is the slow, structural work that makes everything else stick. It carries on every month, so it stays in every report.</p>
+    </div>
+    <div id="techWrap"><div class="tech" id="tech"></div></div>
+  </div>
+</section>
+
+<section class="alt" id="next">
+  <div class="wrap">
+    <div class="head">
+      <div class="eyebrow">What happens next</div>
+      <h2>Here's what we're working on next.</h2>
+    </div>
+    <div class="next" id="nextList"></div>
+    <p class="covered">Everything above is already covered by your plan.</p>
+  </div>
+</section>
+
+<section id="needs">
+  <div class="wrap">
+    <div class="head">
+      <div class="eyebrow">What we need from you</div>
+      <h2>Two things speed everything up.</h2>
+    </div>
+    <div class="needs">
+      <article class="card need" id="needReviews">
+        <div class="ill left" data-ill="reviews"></div>
+        <div class="tagx">1. Reviews</div>
+        <h3>Ask every happy patient for a review.</h3>
+        <p class="king">Velocity is king.</p>
+        <p>AI weighs how often people review you, not just the star rating. A steady stream every week beats a burst once a year.</p>
+        <div class="qrbox">
+          <button class="shot qr" id="qrBtn" aria-label="Open QR code full size"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAcIAAAHCAQAAAABUY/ToAAAD1ElEQVR4nO2dS47bSAyGP44EeCkBOUAfpXyzIEfKDayj+AABSssGJHAWZD0kZ5UZw+2AXAitxwepAIJF/sVyi/JntvzzhyAEGWSQQZ7IVdyu7MIiI8AuIvMuLDPIdR1hkZHy5Pi6rw3yy5Go5kFVVZWkG3pj8L80YweYNkh5UJKqGnF7r3EG+TxyBEBg2GCdkZS/Ua61Gxdl+diAdYb081VfG+RbkMvHp8B6Ub1NG6p5F7lOn0LKT3tnkG9NjucL6edFBXaBaVBhUixAWUT6P94Z5N9Fmg8dCvxd/NoqKOu4sVyr+5hL/bd3Bvn3kbsVW8Cg7SBXO4B8z604ExGZX/m1QX41Eu0sY3WZah60q8bMr6b+0ajLgqzm/gK0wt1vqNYb2/E0fCjIzlwfymCF2G1ypcjikEWf6mZ1pgsfCrLaKQ6BVfTuVx5zJlXXGIsgGT4UZLWiU7vnmCPZrKYeh7DAA3QeFj4UZCOnTyu15MousI7oDxFhkYuS7iKkvEuZ1UDkY3vd1wb55ciiMa4jyjpssO5CyjOS1DwH/IZQH97ebZxBPo/EpqzUDi3tyV7q24MptyXYyIeC7EyP1gqxlg+dNCO9hQ8F2Vsp673ycn9pgtBUq3y8/A99KMijlTahMnlZ0dWqsVKIAb1IFD4UZEdOGyzzLnIFvE0ILD2S73lQlhlIeZemRb7hOIN8EvmgD9m1U45U8iEPVTGXBXkkp600S89eiJlcVM0kJFOPpg1bwX+/cQb5JNJT59SyoGkrkYayhmYVmllJuyMOBVnM56sM3u069UqRp9jUdbXmYe81ziCfR9aYU9dS8YjU6vgiErWwFD4UZGfnvUGmRJcbLTadZcjwoSCLNR/y+FLURr9vp9ALjZEPBdlbp1NDna2yb1T0uQw4qNgRh4LsrGs16xNr1Zb7tCYiJ8KHguytyYbNc7oG6pYP3SY1LTLWy4I82iGJLq0glKTolFgT+lCQj9Z3wNaOj9QcSVs/CN218KEgq7VF+U4QSp1O/dBeHXEoyIPV/fa7kO4juswZYB+VKSPpLrDMv0ZlnYF13PynQd5rnEE+jzzvcy2zGngcouRDx/7YiENBVms5dSvwywJZv/us96bIh4I8kWWtg1Wk9aCJfGzWD9KERo9N0fsRZG9do6vt3KipszdVez91iVdl10fEoSB/Sw4qIiOqd//pTpF5UNL9UldCPu13Pr/C1wb5NciHOHQrS6sl99nwbdKNiHwoyAeyTVl47zR2qj/k0u05M7+KOBTkwfq6LLeKHqArxOrORIbQqYM8msT/WggyyCBfTP4Lsd0KGuwRvWAAAAAASUVORK5CYII=" alt="QR code linking to your review page" width="150" height="150"></button>
+          <div>
+            <b>Show this on your phone.</b>
+            <p>Patients scan it and land on your review page. Save the image to your phone and keep it on your home screen.</p>
+            <div class="btn-row"><button class="btn primary" id="qrOpen">Open QR full size</button><button class="btn" id="copyReview">Copy review link</button></div>
+          </div>
+        </div>
+        <div class="howto">
+          <b>How med spas get the most reviews</b>
+          <ol>
+            <li><strong>Ask at the mirror.</strong> Right after treatment, while they're looking at the result, is the moment. Not by text the next day.</li>
+            <li><strong>Make it one sentence.</strong> "Would you mind leaving us a quick review? Here, just scan this." Then hold up the QR.</li>
+            <li><strong>Name the treatment.</strong> A review that says "microneedling with Maria" teaches AI what you're known for. A review that says "great place" doesn't.</li>
+            <li><strong>Have every provider do it.</strong> One ask per patient, every day. That's the whole system.</li>
+          </ol>
+        </div>
+      </article>
+      <article class="card need" id="needImages">
+        <div class="ill left" data-ill="images"></div>
+        <div class="tagx">2. Photos</div>
+        <h3>Send us photos. Any photos.</h3>
+        <p>This moves the needle more than most people expect. AI reads what's in a photo, and we add the code behind each one: the location, the treatment, the words in the image, the name of the provider. That tells AI and Google exactly what you do and where.</p>
+        <div class="drop"><b>Phone photos are perfect</b><span>Your space, your team, before and afters you have consent for, signs, menus, certificates. Anything with words in it is gold.</span></div>
+        <div class="cred">
+          <div><span>Your upload link</span><input id="imgLink" readonly value="https://localairegistry.com/upload/la-grazia" aria-label="Upload link"></div>
+          <div><span>Password</span><input id="imgPass" readonly value="grazia-2026" aria-label="Upload password"></div>
+        </div>
+        <div class="btn-row"><button class="btn primary" id="copyImg">Copy link and password</button></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="badge-sec" id="badge">
+  <div class="wrap">
+    <div class="head">
+      <div class="ill" data-ill="badge"></div>
+      <div class="eyebrow">Your verified badge</div>
+      <h2>Put this on your website.</h2>
+      <p>AI reads your website. This badge, and the small block of code that comes with it, tells AI that your record on Local AI Registry is the verified source for your business. When AI has the wrong hours, the wrong address or the wrong services, this is how it learns the right ones.</p>
+    </div>
+    <div class="badge-grid">
+      <div id="badgePreview"></div>
+      <div class="embed">
+        <div class="btn-row"><button class="btn coral" id="copyBadge">Copy badge code</button><button class="btn outline-w" id="showCode" aria-expanded="false">Show code</button></div>
+        <pre id="codeBox"></pre>
+        <p>Paste it in your website footer, or send this to whoever manages your site. It takes about two minutes.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="contact">
+  <div class="wrap">
+    <h2>Questions about any of this?</h2>
+    <a class="btn primary" href="mailto:steve.lee@localairegistry.com">steve.lee@localairegistry.com</a>
+  </div>
+</div>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="lockup"><svg viewBox="0 0 100 100" aria-hidden="true" width="22" height="22"><path d="M50 10 L92 86 L64 86 L50 58 L36 86 L8 86 Z" fill="#1F4FE0"/><path d="M50 10 L61 30 L39 30 Z" fill="#FF5A3C"/></svg>Local AI Registry</div>
+    A monthly progress report for La Grazia Aesthetics &amp; Wellness Center. Every result was recorded on the date shown.
+  </div>
+</footer>
+
+<dialog id="dlg" aria-label="Screenshot"><div class="dh"><span id="dlgT"></span><button id="dlgX">Close</button></div><div class="db big" id="dlgB"></div></dialog>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script>
+(function(){
+  function $(id){return document.getElementById(id);}
+  function esc(s){return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/"/g,'&quot;');}
+  var toastT;
+  function toast(m){var t=$('toast');t.textContent=m;t.classList.add('show');clearTimeout(toastT);toastT=setTimeout(function(){t.classList.remove('show')},2600);}
+  function copy(text,msg){
+    function fb(){try{var ta=document.createElement('textarea');ta.value=text;ta.style.position='fixed';ta.style.opacity='0';document.body.appendChild(ta);ta.select();var ok=document.execCommand('copy');document.body.removeChild(ta);toast(ok?msg:'Copy was blocked. Select the text and copy it manually.');}catch(e){toast('Copy was blocked. Select the text and copy it manually.');}}
+    try{if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(text).then(function(){toast(msg)},fb);}else fb();}catch(e){fb();}
+  }
+
+
+  /* ---------- illustrations (brand palette, layman concepts) ---------- */
+  var INK='var(--ink)',BLUE='#1F4FE0',CORAL='#FF5A3C',TINT='#E7EDFC',PAPER='#F4F1EA';
+  function svgI(inner,vb){return '<svg viewBox="'+(vb||'0 0 200 140')+'" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">'+inner+'</svg>';}
+  var ILL={
+    ai: svgI('<rect x="18" y="26" width="112" height="64" rx="14" fill="'+TINT+'" stroke="'+INK+'" stroke-width="2.5"/><path d="M48 90l-10 20 26-20" fill="'+TINT+'" stroke="'+INK+'" stroke-width="2.5"/><circle cx="46" cy="58" r="5" fill="'+INK+'"/><circle cx="74" cy="58" r="5" fill="'+INK+'"/><circle cx="102" cy="58" r="5" fill="'+INK+'"/><path d="M160 20l4 10 10 4-10 4-4 10-4-10-10-4 10-4z" fill="'+CORAL+'"/><path d="M148 60l2.5 6 6 2.5-6 2.5-2.5 6-2.5-6-6-2.5 6-2.5z" fill="'+BLUE+'"/><path d="M138 128h52M146 128V96h36v32M156 104h16v8h-16z" stroke="'+INK+'" stroke-width="2.5" fill="'+PAPER+'"/><path d="M142 96h44l-6-12h-32z" fill="'+BLUE+'" stroke="'+INK+'" stroke-width="2.5"/>'),
+    win: svgI('<path d="M30 112c30-10 38-50 70-50 18 0 28 10 38 10 14 0 24-8 36-28" stroke="'+BLUE+'" stroke-width="5"/><circle cx="174" cy="44" r="12" fill="'+CORAL+'" stroke="'+INK+'" stroke-width="2.5"/><path d="M169 44l4 4 7-8" stroke="#fff" stroke-width="3"/><path d="M20 120h160" stroke="'+INK+'" stroke-width="2.5"/><path d="M60 20l3 8 8 3-8 3-3 8-3-8-8-3 8-3z" fill="'+BLUE+'"/>'),
+    inbox: svgI('<rect x="30" y="34" width="140" height="84" rx="10" fill="'+PAPER+'" stroke="'+INK+'" stroke-width="2.5"/><path d="M30 44l70 44 70-44" stroke="'+INK+'" stroke-width="2.5"/><circle cx="166" cy="34" r="18" fill="'+CORAL+'" stroke="'+INK+'" stroke-width="2.5"/><text x="166" y="40" text-anchor="middle" font-family="Bricolage Grotesque,sans-serif" font-weight="800" font-size="18" fill="#1A0A06" stroke="none">3</text>'),
+    chart: svgI('<path d="M24 116h152M24 116V24" stroke="'+INK+'" stroke-width="2.5"/><path d="M40 100l30-8 30-20 30-6 36-36" stroke="'+BLUE+'" stroke-width="5"/><circle cx="166" cy="30" r="7" fill="'+CORAL+'" stroke="'+INK+'" stroke-width="2.5"/>'),
+    press: svgI('<rect x="50" y="42" width="120" height="84" rx="4" fill="'+PAPER+'" stroke="'+INK+'" stroke-width="2.5" transform="rotate(-4 110 84)"/><rect x="40" y="30" width="120" height="84" rx="4" fill="#fff" stroke="'+INK+'" stroke-width="2.5"/><path d="M52 56h96M52 66h96M52 76h40M52 86h40M52 96h40" stroke="'+INK+'" stroke-width="2.5"/><rect x="100" y="74" width="48" height="28" fill="'+BLUE+'"/><path d="M52 44h52" stroke="'+CORAL+'" stroke-width="5"/>'),
+    dir: svgI('<rect x="30" y="30" width="140" height="90" rx="10" fill="'+TINT+'" stroke="'+INK+'" stroke-width="2.5"/><path d="M30 70c30-10 50 20 80 8s40-28 60-20" stroke="'+INK+'" stroke-width="2" stroke-dasharray="4 5"/><path d="M70 92c-14-14-16-24-6-32s22 0 18 12-12 20-12 20z" fill="'+CORAL+'" stroke="'+INK+'" stroke-width="2.5"/><path d="M130 76c-14-14-16-24-6-32s22 0 18 12-12 20-12 20z" fill="'+BLUE+'" stroke="'+INK+'" stroke-width="2.5"/><path d="M100 110c-10-10-11-17-4-23s16 0 13 8-9 15-9 15z" fill="'+BLUE+'" stroke="'+INK+'" stroke-width="2.5"/>'),
+    actions: svgI('<rect x="46" y="22" width="108" height="104" rx="8" fill="#fff" stroke="'+INK+'" stroke-width="2.5"/><rect x="82" y="14" width="36" height="16" rx="4" fill="'+BLUE+'" stroke="'+INK+'" stroke-width="2.5"/><path d="M62 52l8 8 14-16M62 80l8 8 14-16M62 108l8 8 14-16" stroke="'+CORAL+'" stroke-width="3.5"/><path d="M96 50h42M96 78h42M96 106h42" stroke="'+INK+'" stroke-width="3"/>'),
+    tech: svgI('<path d="M20 116h160" stroke="'+INK+'" stroke-width="2.5"/><rect x="60" y="92" width="80" height="24" fill="'+BLUE+'" stroke="'+INK+'" stroke-width="2.5"/><rect x="70" y="68" width="60" height="24" fill="'+TINT+'" stroke="'+INK+'" stroke-width="2.5"/><rect x="80" y="44" width="40" height="24" fill="'+PAPER+'" stroke="'+INK+'" stroke-width="2.5"/><path d="M100 44V20M90 28l10-8 10 8" stroke="'+CORAL+'" stroke-width="3.5"/>'),
+    reviews: svgI('<rect x="40" y="14" width="64" height="116" rx="12" fill="'+INK+'"/><rect x="48" y="26" width="48" height="92" rx="4" fill="#fff"/><rect x="56" y="48" width="32" height="32" fill="'+INK+'"/><rect x="60" y="52" width="10" height="10" fill="#fff"/><rect x="74" y="52" width="10" height="10" fill="#fff"/><rect x="60" y="66" width="10" height="10" fill="#fff"/><rect x="76" y="68" width="6" height="6" fill="#fff"/><path d="M130 40l5 11 12 1-9 8 3 12-11-6-11 6 3-12-9-8 12-1z" fill="'+CORAL+'"/><path d="M160 80l4 8 9 1-7 6 2 9-8-5-8 5 2-9-7-6 9-1z" fill="'+BLUE+'"/><path d="M118 100l3 6 7 1-5 5 1 7-6-4-6 4 1-7-5-5 7-1z" fill="'+CORAL+'"/>'),
+    images: svgI('<rect x="34" y="40" width="132" height="84" rx="10" fill="#fff" stroke="'+INK+'" stroke-width="2.5"/><path d="M74 40l8-14h36l8 14" stroke="'+INK+'" stroke-width="2.5" fill="'+PAPER+'"/><circle cx="100" cy="82" r="24" fill="'+TINT+'" stroke="'+INK+'" stroke-width="2.5"/><circle cx="100" cy="82" r="11" fill="'+BLUE+'"/><rect x="134" y="52" width="20" height="8" rx="2" fill="'+CORAL+'"/><rect x="150" y="96" width="44" height="22" rx="4" fill="'+INK+'"/><text x="172" y="111" text-anchor="middle" font-family="ui-monospace,Menlo,monospace" font-size="11" fill="#fff" stroke="none">&lt;alt&gt;</text>'),
+    badge: svgI('<path d="M100 14l56 20v34c0 34-24 56-56 68-32-12-56-34-56-68V34z" fill="'+BLUE+'" stroke="#F4F1EA" stroke-width="2.5"/><path d="M100 36l30 52h-20l-10-20-10 20H70z" fill="#fff"/><path d="M100 36l8 14H92z" fill="'+CORAL+'"/>'),
+    t_map: svgI('<circle cx="100" cy="50" r="18" fill="'+BLUE+'"/><circle cx="40" cy="100" r="12" fill="'+TINT+'" stroke="'+INK+'" stroke-width="2.5"/><circle cx="100" cy="112" r="12" fill="'+TINT+'" stroke="'+INK+'" stroke-width="2.5"/><circle cx="160" cy="100" r="12" fill="'+TINT+'" stroke="'+INK+'" stroke-width="2.5"/><path d="M88 64L48 90M100 68v32M112 64l40 26" stroke="'+INK+'" stroke-width="2.5"/>','0 0 200 130'),
+    t_fix: svgI('<rect x="30" y="30" width="140" height="80" rx="8" fill="#fff" stroke="'+INK+'" stroke-width="2.5"/><path d="M30 50h140" stroke="'+INK+'" stroke-width="2.5"/><circle cx="44" cy="40" r="3" fill="'+CORAL+'"/><circle cx="56" cy="40" r="3" fill="'+INK+'"/><path d="M46 70h40M46 86h70M46 100h30" stroke="'+INK+'" stroke-width="3"/><path d="M130 72l10 10 20-24" stroke="'+BLUE+'" stroke-width="4"/>','0 0 200 130'),
+    t_cann: svgI('<rect x="30" y="40" width="56" height="70" rx="6" fill="'+PAPER+'" stroke="'+INK+'" stroke-width="2.5"/><rect x="114" y="40" width="56" height="70" rx="6" fill="'+PAPER+'" stroke="'+INK+'" stroke-width="2.5"/><path d="M40 56h36M40 68h36M40 80h24M124 56h36M124 68h36M124 80h24" stroke="'+INK+'" stroke-width="2.5"/><path d="M90 75h20M104 69l6 6-6 6" stroke="'+CORAL+'" stroke-width="4"/>','0 0 200 130'),
+    t_crawl: svgI('<circle cx="100" cy="70" r="36" fill="'+TINT+'" stroke="'+INK+'" stroke-width="2.5"/><circle cx="100" cy="70" r="10" fill="'+BLUE+'"/><path d="M100 34V20M100 120v-14M64 70H50M150 70h-14M120 40l14-14M80 40L66 26M120 100l14 14M80 100l-14 14" stroke="'+INK+'" stroke-width="2.5"/><circle cx="134" cy="26" r="5" fill="'+CORAL+'"/>','0 0 200 130'),
+    t_schema: svgI('<rect x="40" y="28" width="120" height="84" rx="6" fill="'+INK+'"/><text x="56" y="56" font-family="ui-monospace,Menlo,monospace" font-size="13" fill="#F4F1EA" stroke="none">{ "name":</text><text x="66" y="76" font-family="ui-monospace,Menlo,monospace" font-size="13" fill="#FF8A72" stroke="none">"La Grazia",</text><text x="56" y="96" font-family="ui-monospace,Menlo,monospace" font-size="13" fill="#F4F1EA" stroke="none">"verified": true }</text>','0 0 200 130'),
+    t_llm: svgI('<rect x="44" y="24" width="112" height="92" rx="6" fill="#fff" stroke="'+INK+'" stroke-width="2.5"/><path d="M60 44h60M60 60h80M60 76h50M60 92h70" stroke="'+INK+'" stroke-width="3"/><rect x="118" y="20" width="56" height="20" rx="10" fill="'+CORAL+'"/><text x="146" y="34" text-anchor="middle" font-family="Bricolage Grotesque,sans-serif" font-weight="800" font-size="11" fill="#1A0A06" stroke="none">llms.txt</text>','0 0 200 130')
+  };
+  Array.prototype.forEach.call(document.querySelectorAll('.ill[data-ill]'),function(el){el.innerHTML=ILL[el.dataset.ill]||'';});
+
+  var ENG={
+    gpt:{n:'ChatGPT',c:'#10A37F',l:'C'},
+    ppx:{n:'Perplexity',c:'#20808D',l:'P'},
+    gem:{n:'Gemini',c:'#7B61FF',l:'G'}
+  };
+  function dot(e){return '<span class="eng" style="background:'+e.c+'">'+e.l+'</span>';}
+
+  /* ---------- mock screenshots ---------- */
+  function sk(cls){return '<div class="sk '+(cls||'')+'"></div>';}
+  function serp(q,size){
+    var rows='';for(var i=0;i<4;i++){rows+='<div class="res">'+sk('t')+sk('w90')+sk('w70')+'</div>';}
+    return '<div class="mock" style="'+(size?'font-size:'+size+'px':'')+'"><div class="m-bar"><span class="g">G</span><span class="m-q">'+esc(q)+'</span></div><div class="m-rows"><div class="pack"><div>'+sk('t')+sk('w60')+'</div><div>'+sk('t')+sk('w60')+'</div><div>'+sk('t')+sk('w60')+'</div></div><span class="notp">La Grazia Aesthetics &amp; Wellness Center is not on this page</span>'+rows+'</div></div>';
+  }
+  function chat(q,names,showMe,size,who){who=who||'ChatGPT';
+    var li=names.map(function(n){return '<li><b>'+esc(n)+'</b>'+sk('w90')+sk('w60')+'</li>';}).join('');
+    if(showMe) li+='<li class="me"><b>La Grazia Aesthetics &amp; Wellness Center</b>'+sk('w80')+sk('w40')+'</li>';
+    var tag=showMe?'':'<span class="notp" style="margin-top:.6em">La Grazia Aesthetics &amp; Wellness Center is not named</span>';
+    return '<div class="mock" style="'+(size?'font-size:'+size+'px':'')+'"><div class="chat"><aside><div>New chat</div><div>Search chats</div><div>Library</div></aside><main><div class="who"><span>'+who+'</span><span style="font-weight:400;color:#888">Log in</span></div><div class="bubble">'+esc(q)+'</div><div>Here are several options in Rancho Cucamonga, CA:</div><ol>'+li+'</ol>'+tag+'</main></div></div>';
+  }
+  var SHOTS=[];
+  function shot(builder,title,h,fs){
+    var id=SHOTS.length;SHOTS.push({b:builder,t:title});
+    return '<button class="shot thumb" data-shot="'+id+'" aria-label="Open '+esc(title)+' full size"><div style="height:'+h+'px;overflow:hidden">'+builder(fs||(h>230?10.5:9))+'</div><span class="zoom">Open full size</span></button>';
+  }
+  var dlg=$('dlg');
+  document.addEventListener('click',function(ev){
+    var b=ev.target.closest('[data-shot]');
+    if(b){var s=SHOTS[+b.dataset.shot];$('dlgT').textContent=s.t;$('dlgB').innerHTML=s.b(null);if(dlg.showModal)dlg.showModal();else dlg.setAttribute('open','');}
+  });
+  $('dlgX').addEventListener('click',function(){dlg.close?dlg.close():dlg.removeAttribute('open');});
+  dlg.addEventListener('click',function(e){if(e.target===dlg){dlg.close();}});
+
+  function serpWin(q,size){
+    return '<div class="mock" style="'+(size?'font-size:'+size+'px':'')+'"><div class="m-bar"><span class="g">G</span><span class="m-q">'+esc(q)+'</span></div><div class="m-rows"><div class="hit"><span class="rk">#1</span><div class="hs">theglobeandmail.com</div><div class="ht">La Grazia Aesthetics &amp; Wellness Center Details Its Nurse-Led Microneedling Program in Rancho Cucamonga</div>'+sk('w90')+sk('w60')+'</div>'+
+      '<div class="res">'+sk('t')+sk('w90')+sk('w70')+'</div><div class="res">'+sk('t')+sk('w90')+sk('w70')+'</div><div class="res">'+sk('t')+sk('w80')+sk('w60')+'</div></div></div>';
+  }
+  var GP='https://local.google.com/place?id=17335209991007528166&use=posts&lpsid=';
+  /* ---------- newsstand ---------- */
+  var SLUG='la-grazia-aesthetics-wellness-center-details-its-nurse-led-microneedling-program-in-rancho-cucamonga';
+  var BIG=[
+    ['USA Today','usa','https://www.usatoday.com/press-release/story/41259/'+SLUG+'/'],
+    ['The Globe and Mail','globe','https://www.theglobeandmail.com/investing/markets/markets-news/ACN/4111684/'+SLUG+'/'],
+    ['Financial Content','fin','https://www.financialcontent.com/article/acnnewswire-2026-8-26-la-grazia-aesthetics-and-wellness-center-details-its-nurse-led-microneedling-program-in-rancho-cucamonga'],
+    ['Barchart','bar','https://www.barchart.com/story/news/4111682/'+SLUG]
+  ];
+  var SMALL=['Dubai Weekly','UAE Weekly','Sterling Post','NBC 60','UAE Post','Europa Wire','Fox 91','EU Weekly','Asia News Today','Union Post UK','Gulf Edu','Breaking Daily','BBC Stocks','Tokyo Wire','Gulfs Weekly','Austin Post','LA Today Wire','Signal Post','Tech Breaking','Asia News','Asia Post','Euroglobal New','AZ Weekly Post','Beacon Post','Europa Wire Berlin','Berlins Today','CA Daily Wire','Daily Terminal','Metropol Post','News 61','Post Line','UK News Post','West Post'];
+  var HEAD='La Grazia Aesthetics & Wellness Center Details Its Nurse-Led Microneedling Program';
+  function bigMast(k){
+    if(k==='usa')return '<span class="wm usa" style="color:#0B1A2E"><i style="background:#1F4FE0"></i>USA<br>TODAY</span>';
+    if(k==='globe')return '<span class="wm globe" style="color:#0B1A2E;font-size:24px">The Globe and Mail</span>';
+    if(k==='fin')return '<span class="wm fin" style="color:#0B1A2E;font-size:24px">Financial<small>CONTENT</small></span>';
+    return '<span class="wm bar" style="color:#0B1A2E;font-size:30px">barchart</span>';
+  }
+  function drawNewsstand(more,sample){
+    var h='',HD=sample?'Your story, about what you do best':HEAD,DL=sample?'Example':'Aug 26, 2026',SM=sample?SMALL.slice(0,12):SMALL;
+    BIG.forEach(function(b){
+      h+='<a class="np big" href="'+esc(b[2])+'" target="_blank" rel="noopener"><div class="mh s2" style="white-space:normal">'+bigMast(b[1])+'</div><div class="dl">'+DL+' \u00b7 Press release</div><div class="hl">'+HD+(sample?'':' in Rancho Cucamonga')+'</div><div class="cols"><div>'+sk()+sk()+sk()+sk()+sk()+'</div><div>'+sk()+sk()+sk()+sk()+'</div></div><span class="open">Read it</span></a>';
+    });
+    SM.forEach(function(n,i){
+      var st='s'+(1+(i%4));
+      h+='<a class="np" href="#" data-ph="1"><div class="mh '+st+'">'+esc(n)+'</div><div class="dl">'+DL+'</div><div class="hl">'+HD.slice(0,48)+(sample?'':'\u2026')+'</div>'+sk()+sk()+sk()+'<span class="open">Read it</span></a>';
+    });
+    if(more)h+='<div class="np more"><b>+'+more+'</b><span>more outlets carried your story</span></div>';
+    $('newsstand').innerHTML=h;
+    $('newsstand').addEventListener('click',function(e){var a=e.target.closest('[data-ph]');if(a){e.preventDefault();toast('Placeholder link. In the live report this opens the article.');}});
+  }
+
+  /* ---------- directories: logo wall ---------- */
+  var DIRS=[
+    ['Apple Maps','maps.apple.com','https://maps.apple.com/place?auid=12509897402077872229','L',1],
+    ['Yelp','yelp.com','https://www.yelp.com/biz/la-grazia-aesthetics-and-wellness-center-rancho-cucamonga','L',1],
+    ['MapQuest','mapquest.com','https://www.mapquest.com/us/california/la-grazia-aesthetics-and-wellness-center-800119962','L',1],
+    ['Vagaro','vagaro.com','https://www.vagaro.com/lagraziaaestheticsandwellnesscenter','L',1],
+    ['Manta','manta.com','https://www.manta.com/c/m1x5p3v/la-grazia-aesthetics','L'],
+    ['MerchantCircle','merchantcircle.com','https://www.merchantcircle.com/la-grazia-aesthetics-wellness-center-rancho-cucamonga-ca','L'],
+    ['Brownbook','brownbook.net','https://www.brownbook.net/business/55376261/la-grazia-aesthetics-wellness-center','L'],
+    ['CitySquares','citysquares.com','https://citysquares.com/b/la-grazia-aesthetics-wellness-center-27980499','L'],
+    ['n49','n49.com','https://www.n49.com/biz/6986447/la-grazia-aesthetics-&-wellness-center-california-rancho-cucamonga-9587-arrow-route-b/','L'],
+    ['ProvenExpert','provenexpert.com','https://www.provenexpert.com/la-grazia-aesthetics-wellness-center/','L'],
+    ['Trustindex','trustindex.io','https://www.trustindex.io/reviews/www.lagraziawellness.com','L'],
+    ['TrustLink','trustlink.org','https://www.trustlink.org/Reviews/La-Grazia-Aesthetics-and-Wellness-Center-207675944','L'],
+    ['Tupalo','tupalo.com','http://www.tupalo.com/en/rancho-cucamonga-california/la-grazia-aesthetics-and-wellness-center','L'],
+    ['EnrollBusiness','us.enrollbusiness.com','https://us.enrollbusiness.com/BusinessProfile/7908223/La-Grazia-Aesthetics-&-Wellness-Center','L'],
+    ['A Greater Town','agreatertown.com','https://agreatertown.com/rancho-cucamonga-ca/la-grazia-aesthetics-wellness-center-0002303487617','L'],
+    ['AniBookmark','anibookmark.com','https://www.anibookmark.com/business/la-grazia-aesthetics-and-wellness-center-bs511560.html','L'],
+    ['BizHwy','bizhwy.com','https://california.bizhwy.com/la-grazia-aesthetics-wellness-center-id143718.php','L'],
+    ['BubbleLife','bubblelife.com','https://sites.bubblelife.com/community/la_grazia_aesthetics','L'],
+    ['Find Us Here','find-us-here.com','https://www.find-us-here.com/businesses/La-Grazia-Aesthetics-Wellness-Center-Rancho-Cucamonga-California-USA/34575084/','L'],
+    ['FreeListingUSA','freelistingusa.com','https://www.freelistingusa.com/listings/la-grazia-aesthetics-wellness-center','L'],
+    ['iFormative','iformative.com','https://www.iformative.com/product/la-grazia-aesthetics-amp-wellness-center-p3101772.html','L'],
+    ['LinkCentre','linkcentre.com','https://www.linkcentre.com/profile/lagraziaaestheticswe/','L'],
+    ['Locable','locable.com','https://la-grazia-aesthetics-wellne.locable.com/profile/','L'],
+    ['Trepup','trepup.com','https://www.trepup.com/store/lagraziawellness/profile','L'],
+    ['Tripadvisor','tripadvisor.com','','W',1],['Cylex','cylex.us.com','','W'],['Cybo','cybo.com','','W'],['All.biz','all.biz','','W'],['Cityof','cityof.com','','W'],['Geebo','geebo.com','','W'],['YP Local','yplocal.us','','W']
+  ];
+  var DCOL=['#1F4FE0','#0B1A2E','#C9391D','#117A4D','#7B61FF','#20808D','#8A5A0B','#B3301A'];
+  function mark(n,i){var ini=n.replace(/[^A-Za-z0-9 ]/g,'').split(' ').map(function(w){return w[0];}).join('').slice(0,2).toUpperCase();return '<span class="lm" style="background:'+DCOL[i%DCOL.length]+'">'+ini+'</span>';}
+  $('dirwall').innerHTML=DIRS.map(function(d,i){
+    var live=d[3]==='L',big=d[4];
+    var inner='<div class="dt-top">'+mark(d[0],i)+'<div><b>'+esc(d[0])+'</b><span>'+esc(d[1])+'</span></div><span class="dt-st '+(live?'live':'wait')+'" title="'+(live?'Live':'Pending')+'">'+(live?'Live':'Pending')+'</span></div>'+
+      '<div class="dt-list">'+(big?'<div class="dt-map"><i></i></div>':'')+'<div class="dt-name">La Grazia Aesthetics &amp; Wellness Center</div><div class="dt-stars">\u2605\u2605\u2605\u2605\u2605</div>'+sk('w80')+sk('w60')+sk('w40')+(big?sk('w90')+sk('w70')+sk('w50'):'')+'</div>';
+    return live?'<a class="dt'+(big?' big':'')+'" href="'+esc(d[2])+'" target="_blank" rel="noopener">'+inner+'</a>':'<div class="dt'+(big?' big':'')+' pend">'+inner+'</div>';
+  }).join('');
+
+
+  /* ---------- state model: tier x results x PR ---------- */
+  ILL.shield=svgI('<path d="M100 14l56 20v34c0 34-24 56-56 68-32-12-56-34-56-68V34z" fill="'+TINT+'" stroke="'+INK+'" stroke-width="2.5"/><path d="M78 72l14 14 30-32" stroke="'+BLUE+'" stroke-width="7"/><path d="M150 26l3 7 7 3-7 3-3 7-3-7-7-3 7-3z" fill="'+CORAL+'"/>');
+  Array.prototype.forEach.call(document.querySelectorAll('.ill[data-ill="shield"]'),function(el){el.innerHTML=ILL.shield;});
+  var ENGN={gpt:'ChatGPT',ppx:'Perplexity',gem:'Gemini'};
+  function aiWin(e,q,names,old){return {kind:'ai',e:e,q:q,names:names,rec:old?'Jul 28, 2026':'Sep 27, 2026',old:!!old};}
+  function gWin(q,old){return {kind:'g',q:q,rec:old?'Jul 26, 2026':'Aug 26, 2026',old:!!old};}
+  var NAMES1=['HYDROFUSE Rancho Cucamonga','Medi-Slim Wellness','MeD Diet'],NAMES2=['Channell Wellness & Aesthetics','Thriv Studio','Medi-Slim Wellness'];
+  var W_AUG=[aiWin('gpt','weight management programs in Rancho Cucamonga, CA',NAMES1),aiWin('gpt','wellness center in Rancho Cucamonga, CA',NAMES2),gWin('details its nurse-led microneedling'),gWin('center details its nurse-led la grazia aesthetics')];
+  var W_MAX=[aiWin('gpt','best med spa in Rancho Cucamonga',NAMES2),aiWin('ppx','microneedling near me Rancho Cucamonga',NAMES1),aiWin('gem','botox Rancho Cucamonga',NAMES2),gWin('med spa rancho cucamonga'),aiWin('gpt','iv hydration rancho cucamonga',NAMES1,true),gWin('microneedling rancho cucamonga',true),aiWin('ppx','weight loss clinic rancho cucamonga',NAMES2,true),gWin('botox near me rancho cucamonga',true)];
+  var AI_FLAT=[0,0,0,0,0,0,0];
+  var QPOOL=['best med spa in Rancho Cucamonga','microneedling near me Rancho Cucamonga','botox Rancho Cucamonga','med spa rancho cucamonga','iv hydration rancho cucamonga','microneedling rancho cucamonga','weight loss clinic rancho cucamonga','botox near me rancho cucamonga','dermal filler rancho cucamonga','chemical peel rancho cucamonga','hydrafacial rancho cucamonga','laser hair removal rancho cucamonga','prp facial rancho cucamonga','skin tightening rancho cucamonga','lip filler near me rancho cucamonga','wellness center rancho cucamonga','hormone therapy rancho cucamonga','peptide therapy rancho cucamonga','nurse injector rancho cucamonga','facial rejuvenation rancho cucamonga','medical weight loss inland empire','med spa inland empire','botox upland ca','microneedling ontario ca'];
+  var W_POOL=QPOOL.map(function(q,i){var k=i%4;return k===3?gWin(q,i>=8):aiWin(['gpt','ppx','gem'][k],q,i%2?NAMES1:NAMES2,i>=8);});
+
+  var TIERS={
+    2:{name:'Tier 2',gmb:false,pr:false,articles:false,tech:false,takedown:false,replies:false,asks:false},
+    3:{name:'Tier 3',gmb:true,pr:true,articles:false,tech:false,takedown:false,replies:true,asks:true},
+    4:{name:'Tier 4',gmb:true,pr:true,articles:true,tech:true,takedown:true,replies:true,asks:true}
+  };
+  var RESULTS={
+    normal:{label:'Normal',resH:'Congratulations. This is working.',glance:[['g1','2','AI answers name you'],['g2','+209%','Clicks on your search result'],['g3','25<small>+2</small>','AI Score'],['g4','9','First-page Google rankings']],winsH:'You\u2019re showing up for:',wins:W_AUG,inbox:{wait:3,month:11},ai:{gpt:[0,0,0,0,0,0,11],ppx:AI_FLAT,gem:AI_FLAT,max:20},traffic:[3,3,3,4,4,22]},
+    amazing:{label:'Amazing',resH:'Congratulations. You own your market.',glance:[['g1','112','AI answers name you'],['g2','+640%','Clicks on your search result'],['g3','71<small>+19</small>','AI Score'],['g4','48','First-page Google rankings']],winsH:'You\u2019re showing up for:',wins:W_POOL,page:5,inbox:{wait:9,month:63},ai:{gpt:[0,11,24,38,52,66,78],ppx:[0,0,8,20,41,55,64],gem:[0,0,0,12,28,40,52],max:100},traffic:[22,41,88,160,262,410]},
+    none:{label:'No results yet',education:true,month:2,resH:'The foundation is going in.',glance:[],winsH:'',wins:[],inbox:{wait:0,month:3},ai:{gpt:AI_FLAT,ppx:AI_FLAT,gem:AI_FLAT,max:20},traffic:[3,3,3,4,4,4]}
+  };
+  var ACT_DIR=[{k:'dir',t:'Directories',d:'Sep 15',x:'Yelp, MapQuest, Vagaro re-checked',u:''},{k:'dir',t:'Directories',d:'Sep 2',x:'Cylex and Cybo submitted',u:''},{k:'dir',t:'Directories',d:'Aug 21',x:'21 listings submitted',u:''}];
+  var ACT_GMB=[{k:'post',t:'Google post',d:'Sep 16',x:'Microneedling',u:GP+'CIHM0ogKELTj4ovPrdf8-AE'},{k:'post',t:'Google post',d:'Sep 15',x:'IV hydration',u:GP+'CIHM0ogKEJKmga-5tu-W4gE'},{k:'review',t:'Review reply',d:'Sep 12',x:'5-star review answered',u:''},{k:'photo',t:'Photos',d:'Sep 8',x:'17 photos added and coded',u:'https://www.google.com/maps/place/?q=place_id:ChIJjc5sVcI1w4AR5mTOFKQJk_A'},{k:'post',t:'Google post',d:'Aug 27',x:'Fine lines and wrinkles',u:GP+'CIHM0ogKEOSHssyF2qu0sgE'},{k:'post',t:'Google post',d:'Aug 25',x:'Botox appointments',u:GP+'CIHM0ogKEPWO4IaC_q7k7gE'}];
+  var ACT_PR=[{k:'pr',t:'Press release',d:'Aug 26',x:'Nurse-led microneedling, 418 outlets',u:'#press',local:true}];
+  var ACT_ART=[{k:'article',t:'Article',d:'Sep 18',x:'What to expect at your first microneedling visit',u:''},{k:'article',t:'Blog',d:'Sep 4',x:'IV hydration: who it helps and who it doesn\u2019t',u:''}];
+  var tier=4,res='normal',pr=true,actK='all';
+  var DMAP={'Sep 18':918,'Sep 16':916,'Sep 15':915,'Sep 12':912,'Sep 8':908,'Sep 4':904,'Sep 2':902,'Aug 27':827,'Aug 26':826,'Aug 25':825,'Aug 21':821};
+  function actsFor(){var T=TIERS[tier],a=ACT_DIR.slice();if(T.gmb)a=a.concat(ACT_GMB);if(T.pr&&pr)a=a.concat(ACT_PR);if(T.articles)a=a.concat(ACT_ART);return a.sort(function(x,y){return DMAP[y.d]-DMAP[x.d];});}
+
+  function lockBox(html,tierNeeded,what){
+    return '<div class="locked"><div class="lk-body">'+html+'</div><div class="lk-over"><span class="lk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg></span><b>Available on '+tierNeeded+'</b><span>'+what+'</span><a class="btn primary" href="https://localairegistry.com/pricing" target="_blank" rel="noopener">Upgrade</a></div></div>';
+  }
+  function unlock(id){var el=$(id);var l=el.querySelector(':scope>.locked');if(l){el.innerHTML=l.querySelector('.lk-body').innerHTML;}}
+  function lockEl(id,tierNeeded,what){unlock(id);var el=$(id);el.innerHTML=lockBox(el.innerHTML,tierNeeded,what);}
+
+  function drawSeen(on){
+    $('seen').innerHTML=on?'<span class="lab">This month you were in</span><span class="wm usa"><i></i>USA<br>TODAY</span><span class="wm globe">The Globe and Mail</span><span class="wm fin">Financial<small>CONTENT</small></span><span class="wm bar">barchart</span><span class="wm uae">UAE Post</span><span class="wm more">and hundreds more</span>'
+      :'<span class="lab">Tracked on</span><span class="wm bar" style="font-size:17px">ChatGPT</span><span class="wm bar" style="font-size:17px">Perplexity</span><span class="wm bar" style="font-size:17px">Gemini</span><span class="wm bar" style="font-size:17px">Google</span>';
+  }
+  function drawGlance(R){
+    $('resH').textContent=R.resH;
+    var acts=actsFor();
+    $('glance').style.display=R.glance.length?'':'none';
+    $('glance').innerHTML=R.glance.map(function(g){var n=g[1]==='WORK'?acts.length:g[1];return '<div class="g-card '+g[0]+'">'+(g[0]==='g3'?'<div class="engs">'+dot(ENG.gpt)+dot(ENG.ppx)+dot(ENG.gem)+'</div>':'')+'<div class="num">'+n+'</div><div class="t">'+g[2]+'</div></div>';}).join('');
+  }
+  function winRow(w){
+    var ai=w.kind==='ai',who=ai?ENGN[w.e]:'Google',isNew=!w.old;
+    var head=ai?'You\u2019re '+(isNew?'now ':'')+'recommended by <span class="hl">'+who+'</span> for':'You\u2019re '+(isNew?'now ':'')+'<span class="hl">#1 on Google</span> for';
+    var after=ai?shot(function(s){return chat(w.q,w.names,true,s,who);},'Proof: '+who+' names you',340,12):shot(function(s){return serpWin(w.q,s);},'Proof: you are #1 on Google',340,12);
+    var before=ai?shot(function(s){return chat(w.q,w.names,false,s,who);},'Before',72,4.2):shot(function(s){return serp(w.q,s);},'Before',72,4.2);
+    return '<article class="card rw">'+(isNew?'<span class="newtag">'+(ai?'New in AI':'New on Google')+'</span>':'')+'<h3>'+(isNew?'Congrats! ':'')+head+'<span class="q">\u201C'+esc(w.q)+'\u201D</span></h3>'+
+      '<div class="rw-p">'+after+'<div class="cap"><span><b class="win-t">Proof</b></span><span>Recorded '+w.rec+'</span></div></div>'+
+      '<div class="rw-before"><div class="mini">'+before+'</div><div><b class="bad">Before</b>You weren\u2019t '+(ai?'named.':'on page 1.')+'</div></div></article>';
+  }
+  var PHASES=[[1,2,'Foundation','Your record is verified, listings go out, your site gets its technical fixes.'],[2,3,'First signals','Perplexity and your press coverage start to surface within weeks.'],[3,4,'First mentions','ChatGPT and Google AI start naming you for searches about you.'],[4,7,'Consistent','You are named across engines and query types. Every mention makes the next one easier.']];
+  var MONTHS=6;
+  var CITES=[['The Answer Engine, How long does it take to show up in AI search results (initial signals 4 to 8 weeks, consistent citations 3 to 6 months)','https://www.theanswerengine.ai/blog/how-long-to-show-up-in-ai-search-results'],['Authority Tech, How long does earned media take to appear in AI citations (Stacker/Scrunch study: press distribution lifted citation rates from 7.7% to 34%)','https://authoritytech.io/blog/earned-media-ai-citation-timeline-2026'],['AIOSEO, How to get cited by ChatGPT, Perplexity and AI search (Perplexity in days, ChatGPT Search 1 to 3 weeks, Google AI 4 to 8 weeks)','https://aioseo.com/how-to-get-cited-by-ai-search-tools/']];
+  function trajectory(mo,mobile){
+    var W=mobile?360:900,H=mobile?300:300,L=mobile?18:40,Rm=mobile?12:24,T=mobile?16:30,Bm=mobile?46:50,iw=W-L-Rm,ih=H-T-Bm;
+    function x(m){return L+iw*(m-1)/MONTHS;}function y(v){return T+ih-ih*v;}function curve(m){return 1/(1+Math.exp(-(m-2.9)/0.6));}
+    var pts=[];for(var m=1;m<=MONTHS+1;m+=0.25){pts.push([x(m),y(curve(m))]);}
+    var d=pts.map(function(q,i){return (i?'L':'M')+q[0].toFixed(1)+' '+q[1].toFixed(1);}).join(' ');
+    var g='';PHASES.forEach(function(ph,i){g+='<rect x="'+x(ph[0])+'" y="'+T+'" width="'+(x(ph[1])-x(ph[0]))+'" height="'+ih+'" fill="'+(i%2?'var(--tint)':'transparent')+'" opacity=".55"/>';
+      var cx=(x(ph[0])+x(ph[1]))/2;
+      if(mobile){g+='<circle cx="'+cx+'" cy="'+(T+16)+'" r="11" fill="var(--card)" stroke="var(--line)"/><text x="'+cx+'" y="'+(T+21)+'" text-anchor="middle" font-size="13" fill="var(--ink)" font-family="Bricolage Grotesque,sans-serif" font-weight="800">'+(i+1)+'</text>';}
+      else g+='<text x="'+cx+'" y="'+(T+16)+'" text-anchor="middle" font-size="11" fill="var(--muted)" font-family="Bricolage Grotesque,sans-serif" font-weight="700" letter-spacing="1.5">'+ph[2].toUpperCase()+'</text>';});
+    g+='<path d="'+d+' L'+x(MONTHS+1)+' '+y(0)+' L'+x(1)+' '+y(0)+'Z" fill="var(--blue)" opacity=".08"/><path d="'+d+'" fill="none" stroke="var(--blue)" stroke-width="4" stroke-linecap="round"/>';
+    var ticks=[1,2,3,4,5,6];
+    ticks.forEach(function(m){g+='<text x="'+x(m)+'" y="'+(H-18)+'" text-anchor="middle" font-size="12" fill="var(--muted)" font-family="Hanken Grotesk,sans-serif">'+m+'</text>';});
+    g+='<text x="'+(W/2)+'" y="'+(H-2)+'" text-anchor="middle" font-size="11" fill="var(--muted)" font-family="Bricolage Grotesque,sans-serif" font-weight="700" letter-spacing="1.5">MONTHS</text>';
+    var hy=curve(mo),px=x(mo),py=y(hy);
+    g+='<line x1="'+px+'" x2="'+px+'" y1="'+T+'" y2="'+y(0)+'" stroke="var(--coral)" stroke-width="2" stroke-dasharray="5 5"/><circle cx="'+px+'" cy="'+py+'" r="9" fill="var(--coral)" stroke="var(--card)" stroke-width="3"/>';
+    var bw=92,bx=mobile?Math.min(px+12,W-Rm-bw):px+14,by=mobile?py-58:py-34;
+    g+='<g><rect x="'+bx+'" y="'+by+'" width="'+bw+'" height="28" rx="14" fill="var(--coral)"/><text x="'+(bx+bw/2)+'" y="'+(by+19)+'" text-anchor="middle" font-size="12" fill="#1A0A06" font-family="Bricolage Grotesque,sans-serif" font-weight="800">YOU ARE HERE</text></g>';
+    if(!mobile)g+='<text x="'+(x(MONTHS+1)-2)+'" y="'+(y(1)-8)+'" text-anchor="end" font-size="12" fill="var(--bluetext)" font-family="Bricolage Grotesque,sans-serif" font-weight="800">AI RECOMMENDS YOU</text>';
+    return svgEl(W,H,g);
+  }
+  function education(R){
+    return '<div class="card chartcard edu-chart"><h3>Here\u2019s where you are.</h3><p>This is what a typical engagement looks like from here until you see results. Visibility in AI and Google builds slowly at first, then compounds. The curve is the shape, not a promise.</p><div class="edu-desktop">'+trajectory(R.month,false)+'</div><div class="edu-mobile">'+trajectory(R.month,true)+'<ol class="edu-key">'+PHASES.map(function(ph,i){return '<li><b>'+(i+1)+'</b><div><strong>'+ph[2]+'</strong><span>Month '+ph[0]+(ph[1]-1>ph[0]?' to '+(ph[1]-1):'')+(i===PHASES.length-1?' and on':'')+'</span></div></li>';}).join('')+'<li class="top"><b>\u2191</b><div><strong>AI recommends you</strong><span>Where the curve is heading</span></div></li></ol></div>'+
+      '<div class="edu-cites"><b>Sources</b>'+CITES.map(function(c){return '<a href="'+c[1]+'" target="_blank" rel="noopener">'+c[0]+'</a>';}).join('')+'</div></div>'+
+      '<article class="card found" style="margin-top:18px"><div><h3>Already in the ground.</h3><p>Before an assistant names a business, it checks that the web agrees about it. That evidence is what we are building now, and it compounds.</p><ul><li><strong>Matching listings.</strong> Every directory that shows the same name, address and phone is one more source saying you are real.</li><li><strong>Independent mentions.</strong> Press and local write-ups count more than anything on your own site.</li><li><strong>Fresh activity.</strong> Weekly posts, photos and review replies show the business is alive.</li></ul></div><div class="built"><div class="bt"><span>Your record, verified</span><b>\u2713</b></div><div class="bt"><span>Matching listings</span><b>\u2713</b></div><div class="bt"><span>Weekly Google posts</span><b>'+(TIERS[tier].gmb?'\u2713':'\uD83D\uDD12')+'</b></div><div class="bt"><span>Photos coded for AI</span><b>'+(TIERS[tier].gmb?'\u2713':'\uD83D\uDD12')+'</b></div><div class="bt"><span>Weekly AI checks running</span><b>\u2713</b></div></div></article>';
+  }
+  var shown=0;
+  function drawWins(R,append){
+    if(!append){SHOTS.length=0;shown=0;}
+    $('winsH').textContent=R.winsH;$('winsH').style.display=R.winsH?'':'none';
+    if(R.education){$('wins').innerHTML=education(R);return;}
+    var step=R.page||R.wins.length,next=Math.min(R.wins.length,shown+step);
+    var h=R.wins.slice(shown,next).map(winRow).join('');shown=next;
+    if(append){var mb=$('wins').querySelector('.morewins');if(mb)mb.remove();$('wins').insertAdjacentHTML('beforeend',h);}else $('wins').innerHTML=h;
+    if(shown<R.wins.length)$('wins').insertAdjacentHTML('beforeend','<div class="morewins"><button class="btn" id="winsMore">Show more</button><span class="mw-n">'+shown+' of '+R.wins.length+'</span></div>');
+  }
+  document.addEventListener('click',function(e){if(e.target.closest('#winsMore'))drawWins(RESULTS[res],true);});
+  function drawInbox(ib){
+    var rows=[['A','Appointment request','Microneedling, any weekday after 4 p.m.','2d'],['M','Question','Do you offer package pricing for Botox?','4d'],['J','Question','Is there parking at the Arrow Route location?','6d'],['R','Appointment request','IV hydration, Saturday morning','Replied'],['K','Question','Do you take walk-ins?','Replied']];
+    var h='<div class="ib-top"><b>Your inbox</b>'+(ib.wait?'<span class="ib-badge">'+ib.wait+' waiting<span class="ph">*</span></span>':'<span class="ib-badge" style="background:var(--goodtint);color:var(--good)">All replied</span>')+'</div>';
+    rows.slice(0,4).forEach(function(r,i){var un=i<ib.wait;h+='<div class="ib-row'+(un?' unread':'')+'"><span class="av'+(un?'':' done')+'">'+r[0]+'</span><div><b>'+r[1]+'</b><span>'+r[2]+'</span></div><em>'+(un?r[3]:'Replied')+'</em></div>';});
+    h+='<div class="ib-foot">'+ib.month+' people reached out this month<span class="ph">*</span>. Replying fast keeps them, and shows AI you\u2019re active.</div>';
+    $('ibCard').innerHTML=h;
+    $('ibIll').innerHTML=ib.wait?ILL.inbox:ILL.inbox.replace(/<circle cx="166"[\s\S]*?<\/text>/,'');
+  }
+  function svgEl(w,h,inner){return '<svg viewBox="0 0 '+w+' '+h+'" role="img">'+inner+'</svg>';}
+  function aiChart(d){
+    var W=900,H=300,L=46,R=24,T=24,Bm=44,labels=['20 Jul','27 Jul','17 Aug','24 Aug','31 Aug','14 Sep','21 Sep'];
+    var series=[{n:'Gemini',c:'var(--ink)',r:8,vals:d.gem,hollow:true},{n:'Perplexity',c:'var(--coral)',r:5.5,vals:d.ppx},{n:'ChatGPT',c:'var(--blue)',r:4,vals:d.gpt}];
+    var ymax=d.max,iw=W-L-R,ih=H-T-Bm,ticks=ymax>50?[0,25,50,75,100]:[0,5,10,15,20];
+    function x(i){return L+iw*i/(labels.length-1);}function y(v){return T+ih-ih*v/ymax;}
+    var g='';ticks.forEach(function(v){g+='<line x1="'+L+'" x2="'+(W-R)+'" y1="'+y(v)+'" y2="'+y(v)+'" stroke="var(--line)"/><text x="'+(L-10)+'" y="'+(y(v)+4)+'" text-anchor="end" font-size="12" fill="var(--muted)" font-family="Hanken Grotesk,sans-serif">'+v+'%</text>';});
+    labels.forEach(function(l,i){g+='<text x="'+x(i)+'" y="'+(H-14)+'" text-anchor="middle" font-size="12" fill="var(--muted)" font-family="Bricolage Grotesque,sans-serif" font-weight="700" letter-spacing="1">'+l.toUpperCase()+'</text>';});
+    series.forEach(function(s){var dd=s.vals.map(function(v,i){return (i?'L':'M')+x(i)+' '+y(v);}).join(' ');g+='<path d="'+dd+'" fill="none" stroke="'+s.c+'" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>';s.vals.forEach(function(v,i){g+='<circle cx="'+x(i)+'" cy="'+y(v)+'" r="'+s.r+'" fill="'+(s.hollow?'var(--card)':s.c)+'" stroke="'+s.c+'" stroke-width="'+(s.hollow?2.5:0)+'"/>';});});
+    var last=d.gpt[6];if(last){var lx=x(6),ly=y(last);g+='<g><rect x="'+(lx-86)+'" y="'+(ly-42)+'" width="72" height="30" rx="8" fill="var(--blue)"/><text x="'+(lx-50)+'" y="'+(ly-22)+'" text-anchor="middle" font-size="16" fill="#fff" font-family="Bricolage Grotesque,sans-serif" font-weight="800">'+last+'%</text></g>';}
+    $('aiChart').innerHTML=svgEl(W,H,g);
+    $('aiLegend').innerHTML=series.slice().reverse().map(function(s){return '<span><i style="background:'+s.c+'"></i><b>'+s.n+'</b></span>';}).join('');
+  }
+  function trafficChart(v){
+    var W=900,H=320,L=46,R=24,T=34,Bm=44,m=['Mar 26','Apr 26','May 26','Jun 26','Jul 26','Aug 26'];
+    var top=Math.max.apply(null,v),ymax=top<=25?25:Math.ceil(top*1.15/50)*50,iw=W-L-R,ih=H-T-Bm,bw=iw/m.length;
+    function y(val){return T+ih-ih*val/ymax;}
+    var g='';for(var t=0;t<=ymax;t+=ymax/5){g+='<line x1="'+L+'" x2="'+(W-R)+'" y1="'+y(t)+'" y2="'+y(t)+'" stroke="var(--line)"/><text x="'+(L-10)+'" y="'+(y(t)+4)+'" text-anchor="end" font-size="12" fill="var(--muted)" font-family="Hanken Grotesk,sans-serif">'+Math.round(t)+'</text>';}
+    m.forEach(function(l,i){var cx=L+bw*i+bw/2,w=bw*.46,tp=y(v[i]),last=i===m.length-1;
+      g+='<rect x="'+(cx-w/2)+'" y="'+tp+'" width="'+w+'" height="'+(y(0)-tp)+'" rx="6" fill="'+(last?'var(--blue)':'var(--tint)')+'" '+(last?'':'stroke="var(--blue)" stroke-opacity=".35"')+'/>';
+      g+='<text x="'+cx+'" y="'+(tp-10)+'" text-anchor="middle" font-size="'+(last?20:14)+'" fill="'+(last?'var(--bluetext)':'var(--muted)')+'" font-family="Bricolage Grotesque,sans-serif" font-weight="800">'+v[i]+'</text>';
+      g+='<text x="'+cx+'" y="'+(H-14)+'" text-anchor="middle" font-size="12" fill="var(--muted)" font-family="Bricolage Grotesque,sans-serif" font-weight="700" letter-spacing="1">'+l.toUpperCase()+'</text>';
+      if(i===4){var lx=cx-w/2-14;g+='<line x1="'+lx+'" x2="'+lx+'" y1="'+(T-8)+'" y2="'+y(0)+'" stroke="var(--coral)" stroke-width="2" stroke-dasharray="5 5"/><g><rect x="'+(lx-84)+'" y="'+(T-30)+'" width="168" height="26" rx="13" fill="var(--coral)"/><text x="'+lx+'" y="'+(T-12)+'" text-anchor="middle" font-size="12" fill="#1A0A06" font-family="Bricolage Grotesque,sans-serif" font-weight="800">WHEN WE BEGAN</text></g>';}
+    });
+    $('trafficChart').innerHTML=svgEl(W,H,g);
+  }
+  function microThumb(k){
+    if(k==='post')return '<div class="mt"><div class="mt-img"></div>'+sk('w90')+sk('w60')+'</div>';
+    if(k==='photo')return '<div class="mt grid"><i></i><i></i><i></i><i></i></div>';
+    if(k==='pr'||k==='article')return '<div class="mt"><div class="mt-h"></div>'+sk('w90')+sk('w90')+sk('w70')+'</div>';
+    if(k==='review')return '<div class="mt"><div class="mt-stars">\u2605\u2605\u2605\u2605\u2605</div>'+sk('w90')+sk('w50')+'</div>';
+    return '<div class="mt"><div class="mt-pin"></div>'+sk('w70')+sk('w50')+'</div>';
+  }
+  var LOCKSVG='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg>';
+  function drawActs(){
+    var T=TIERS[tier],all=actsFor();
+    var chips=[['all','All',true],['dir','Directories',true],['post','Google posts',T.gmb,'Tier 3'],['photo','Photos',T.gmb,'Tier 3'],['review','Review replies',T.replies,'Tier 3'],['pr','Press release',T.pr,'Tier 3'],['article','Articles and blogs',T.articles,'Tier 4']];
+    if(!chips.some(function(c){return c[0]===actK&&c[2];}))actK='all';
+    $('actTabs').innerHTML=chips.map(function(c){return c[2]?'<button class="tab" data-k="'+c[0]+'" aria-pressed="'+(actK===c[0])+'">'+c[1]+'</button>':'<button class="tab lockchip" data-lock="'+c[3]+'">'+LOCKSVG+' '+c[1]+'</button>';}).join('');
+    var list=all.filter(function(a){return actK==='all'||a.k===actK;});
+    $('timeline').innerHTML=list.map(function(a){var open=a.u?(a.local?'<a class="view" href="'+a.u+'">See it</a>':'<a class="view" href="'+esc(a.u)+'" target="_blank" rel="noopener">Open</a>'):'';
+      return '<div class="tl"><div class="tl-d">'+a.d+'</div><div class="tl-dot k-'+a.k+'"></div><div class="card tl-c">'+microThumb(a.k)+'<div><span class="tl-t">'+a.t+'</span><b>'+esc(a.x)+'</b></div>'+open+'</div></div>';}).join('')||'<p style="text-align:center;color:var(--muted)">Nothing in this category this month.</p>';
+  }
+  $('actTabs').addEventListener('click',function(e){var b=e.target.closest('.tab');if(!b)return;if(b.dataset.lock){toast('Articles and blogs are part of '+b.dataset.lock+'.');return;}actK=b.dataset.k;drawActs();});
+  var TECH=[
+    {i:'t_map',t:'Topical map',d:'The strategy. A map of every topic a patient might ask about, so your site answers all of them and AI sees you as the authority on each.'},
+    {i:'t_fix',t:'Technical fixes',d:'Clean web addresses, a sitemap and a robots file. Boring, but it is how search engines and AI find every page without getting lost.'},
+    {i:'t_llm',t:'AI-readable files',d:'A plain file (llms.txt) that tells AI assistants what your business is, in their language, straight from your own site.'},
+    {i:'t_cann',t:'Cannibalization fix',d:'When two of your pages compete for the same search, both lose. We merge or separate them so each search has one clear winner.'},
+    {i:'t_crawl',t:'Crawler and crawl budget',d:'Google and AI only spend so much time on your site. We make sure that time goes to the pages that matter.'},
+    {i:'t_schema',t:'Schema code',d:'Code behind your pages that spells out your services, providers, hours and location so machines read them exactly right.'}
+  ];
+  var STL={done:'Done',prog:'In progress',sched:'Scheduled'};
+  function drawTech(){
+    var st=TIERS[tier].tech?(res==='amazing'?['done','done','done','done','done','done']:['prog','done','done','prog','prog','done']):['sched','sched','sched','sched','sched','sched'];
+    $('tech').innerHTML=TECH.map(function(t,i){return '<div class="card tk"><div class="ill">'+ILL[t.i]+'</div><h3>'+t.t+'</h3><p>'+t.d+'</p>'+(TIERS[tier].tech?'<span class="st '+st[i]+'">'+STL[st[i]]+'</span>':'')+'</div>';}).join('');
+    if(TIERS[tier].tech)unlock('techWrap');else lockEl('techWrap','Tier 4','The structural work that makes everything else stick: topical map, technical fixes, AI-readable files, crawl budget and schema.');
+  }
+  function emblem(on){
+    return '<div class="emblem'+(on?'':' off')+'"><svg viewBox="0 0 120 120"><defs><path id="ep" d="M60,60 m-46,0 a46,46 0 1,1 92,0 a46,46 0 1,1 -92,0"/></defs><g class="ring"><circle cx="60" cy="60" r="46" fill="none" stroke="'+(on?'#1F4FE0':'#C8CDD6')+'" stroke-width="1.5" stroke-dasharray="3 4"/><text><textPath href="#ep">NEGATIVE REVIEW PROTECTION \u00b7 '+(on?'ON \u00b7 WATCHING':'LOCKED \u00b7 TIER 4')+' \u00b7 </textPath></text></g><circle cx="60" cy="60" r="30" fill="'+(on?'#1F4FE0':'#C8CDD6')+'"/><path d="M60 40l16 6v10c0 10-7 17-16 21-9-4-16-11-16-21V46z" fill="#fff"/>'+(on?'<path d="M52 61l6 6 11-12" stroke="#1F4FE0" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>':'<rect x="54" y="58" width="12" height="9" rx="2" fill="#8A93A3"/><path d="M57 58v-3a3 3 0 0 1 6 0v3" stroke="#8A93A3" stroke-width="2" fill="none"/>')+'</svg></div>';
+  }
+  function drawReviews(){
+    var T=TIERS[tier];
+    var td='<div id="tdIn">'+emblem(T.takedown)+'<div><h3>Negative review protection</h3><p>New one and two star reviews are flagged and challenged with Google before they settle in, and you hear about each one the same day.</p>'+(T.takedown?'<span class="on"><i></i>On and watching</span>':'')+'</div></div>';
+    $('takedown').innerHTML=T.takedown?td:lockBox(td,'Tier 4','Automatic challenges on new negative reviews.');
+    var rr='<div id="rrIn"><div class="ill" style="width:120px;height:100px;margin:0">'+ILL.reviews+'</div><div><h3>Review replies, in your voice</h3><p>Every review from three stars up gets a reply written in your voice. You see each one before it goes live.</p>'+(T.replies?'<span class="on"><i></i>On</span>':'')+'</div></div>';
+    $('revreply').innerHTML=T.replies?rr:lockBox(rr,'Tier 3','Replies to every review, written in your voice and sent to you first.');
+  }
+  function drawPress(){
+    var T=TIERS[tier],on=T.pr&&pr;
+    if(!T.pr){$('press').hidden=false;$('pressEye').textContent='Press coverage, Tier 3';$('pressH').textContent='Get your story in the news.';$('pressP').textContent='On Tier 3 we write a press release about what you do best and publish it across hundreds of news sites. Every article links back to you. Here is what that looks like for a business like yours.';$('prCard').hidden=true;drawNewsstand(0,true);lockEl('pressWrap','Tier 3','A press release about what you do best, published across hundreds of news sites, every one linking back to you.');return;}
+    unlock('pressWrap');$('pressEye').textContent='Press coverage';$('pressP').textContent='One press release, written about what you do best, published across the news. Every article links back to your website. This is the evidence AI checks before it names you.';$('prCard').hidden=false;
+    $('press').hidden=!on;
+    if(on){$('pressH').textContent='Your story ran in 418 news outlets.';$('prMeta').textContent='Published Aug 26, 2026';drawNewsstand(381);}
+  }
+  function drawAsks(){
+    var T=TIERS[tier];
+    if(T.asks){unlock('needReviews');unlock('needImages');}
+    else{lockEl('needReviews','Tier 3','Your own review link and QR code, plus how to ask.');lockEl('needImages','Tier 3','Send us photos and we code each one so AI can read it.');}
+  }
+  function render(){
+    var T=TIERS[tier],R=RESULTS[res];
+    $('tierPill').innerHTML='<svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3.2 3.2L13 5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Verified report \u00b7 '+T.name;
+    $('heroOver').textContent='Monthly report, August 21 to September 20';$('heroLede').innerHTML='Here\u2019s your August in full.';
+    drawSeen(T.pr&&pr);drawGlance(R);drawWins(R);drawInbox(R.inbox);
+    var aiUp=['gpt','ppx','gem'].some(function(k){var v=R.ai[k];return v[v.length-1]>v[v.length-2];});$('ai-trend').hidden=!aiUp;if(aiUp)aiChart(R.ai);
+    var tr=R.traffic,trUp=tr[tr.length-1]>tr[tr.length-2];$('trafficBlock').hidden=!trUp;if(trUp)trafficChart(tr);
+    drawPress();$('dirCounts').innerHTML='<span class="cnt live"><b>24</b> live</span><span class="cnt wait"><b>7</b> pending</span>';
+    drawActs();drawReviews();drawTech();drawAsks();
+    var g=function(label,items,cur,disabled){return '<span class="grp"><span>'+label+'</span>'+items.map(function(i){return '<button type="button" data-g="'+label+'" data-v="'+i[0]+'" aria-pressed="'+(String(cur)===String(i[0]))+'"'+(disabled?' disabled':'')+'>'+i[1]+'</button>';}).join('')+'</span>';};
+    $('modes').innerHTML=g('Tier',[[2,'Tier 2'],[3,'Tier 3'],[4,'Tier 4']],tier)+g('Results',Object.keys(RESULTS).map(function(k){return [k,RESULTS[k].label];}),res)+g('PR',[[true,'Yes'],[false,'No']],T.pr?pr:false,!T.pr);
+  }
+  $('modes').addEventListener('click',function(e){var b=e.target.closest('button[data-g]');if(!b)return;var v=b.dataset.v;if(b.dataset.g==='Tier')tier=+v;else if(b.dataset.g==='Results')res=v;else pr=(v==='true');render();});
+
+  /* ---------- next ---------- */
+  var NEXT=[
+    ['Keep pushing your searches toward page one','and read your Google results again so you can see the after.'],
+    ['Keep adding your name, address and phone','to the directories you are not on yet.'],
+    ['Post to your Google listing every week','on the services people near you actually search for.'],
+    ['Answer your reviews from three stars up','in your voice, and send each one to you before it goes live.'],
+    ['Keep adding photos to your listing','spread across the month instead of all at once.'],
+    ['Report next month\'s clicks','on your search result, the same way we did this month.'],
+    ['Place your next press release','and pitch it at the outlets that cover Rancho Cucamonga.'],
+    ['Ask the assistants the same questions every week','and show you who names you and who doesn\'t.'],
+    ['Keep earning links to your site','from sites worth your name.'],
+    ['Re-check every directory listing on a schedule','and fix anything that drifts.']
+  ];
+  $('nextList').innerHTML=NEXT.map(function(n){return '<div class="card nx"><span class="ck"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3.2 3.2L13 5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span><p><b>'+n[0]+'</b> '+n[1]+'</p></div>';}).join('');
+
+  /* ---------- badge: preview and embed share one markup ---------- */
+  var PROFILE='https://localairegistry.com/biz/ca/rancho-cucamonga/la-grazia-aesthetics-and-wellness-center-rancho-cucamonga-ca';
+  var MARK='<svg viewBox="0 0 100 100" width="40" height="40" aria-hidden="true"><path d="M50 10 L92 86 L64 86 L50 58 L36 86 L8 86 Z" fill="#4F78F0"/><path d="M50 10 L61 30 L39 30 Z" fill="#FF5A3C"/></svg>';
+  var BADGE='<a class="lair-badge" href="'+PROFILE+'" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:14px;padding:14px 20px 14px 16px;background:#0B1A2E;color:#F4F1EA;border:1px solid #1F4FE0;border-radius:10px;text-decoration:none;font-family:Arial,sans-serif">'+MARK+'<span><span style="display:block;font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:#A7B4C7;margin-bottom:3px">Listed in the</span><span style="display:block;font-weight:700;font-size:16px;line-height:1.2">Local AI Registry</span><span style="display:block;font-size:12px;color:#A7B4C7;margin-top:3px">Verified record \u00b7 La Grazia Aesthetics &amp; Wellness Center</span></span></a>';
+  var SCHEMA='<script type="application/ld+json">\n'+JSON.stringify({'@context':'https://schema.org','@type':'MedicalBusiness','name':'La Grazia Aesthetics & Wellness Center','url':'http://www.lagraziawellness.com/','sameAs':[PROFILE]},null,2)+'\n<\/script>';
+  $('badgePreview').innerHTML='<span class="pv">Exactly what shows on your site</span>'+BADGE;
+  var codeBox=$('codeBox');codeBox.textContent=BADGE+'\n\n'+SCHEMA;
+  $('copyBadge').addEventListener('click',function(){copy(BADGE+'\n'+SCHEMA,'Badge code copied');});
+  $('showCode').addEventListener('click',function(){var o=codeBox.classList.toggle('open');this.textContent=o?'Hide code':'Show code';this.setAttribute('aria-expanded',o);});
+  var REVIEW='https://localairegistry.com/r/la-grazia-aesthetics-and-wellness-center-rancho-cucamonga-ca/review';
+  function openQR(){var img=$('qrBtn')&&$('qrBtn').querySelector('img');if(!img)return;$('dlgT').textContent='Your review QR code';$('dlgB').innerHTML='<div class="qrbig"><img src="'+img.src+'" alt="QR code linking to your review page"><p>Press and hold (phone) or right-click (computer) to save the image.</p></div>';dlg.showModal?dlg.showModal():dlg.setAttribute('open','');}
+  document.addEventListener('click',function(e){
+    var t=e.target.closest('#qrBtn,#qrOpen,#copyReview,#copyImg');if(!t)return;
+    if(t.id==='qrBtn'||t.id==='qrOpen')openQR();
+    else if(t.id==='copyReview')copy(REVIEW,'Review link copied');
+    else copy('Upload link: '+$('imgLink').value+'\nPassword: '+$('imgPass').value,'Link and password copied');
+  });
+
+  render();
+
+  /* ---------- export + placeholders ---------- */
+  var eb=$('exportBtn'),em=$('exportMenu');
+  eb.addEventListener('click',function(e){e.stopPropagation();var o=em.classList.toggle('open');eb.setAttribute('aria-expanded',o);});
+  document.addEventListener('click',function(e){
+    em.classList.remove('open');eb.setAttribute('aria-expanded','false');
+    var a=e.target.closest('.ph-link');if(a){e.preventDefault();toast('Placeholder link. In the live report this opens the real page.');}
+  });
+  document.addEventListener('keydown',function(e){if(e.key==='Escape'){em.classList.remove('open');eb.setAttribute('aria-expanded','false');}});
+  $('doPrint').addEventListener('click',function(){try{window.print();}catch(e){toast('Printing was blocked in this view. Use your browser menu to print.');}});
+  $('doLink').addEventListener('click',function(){copy(location.href,'Report link copied');});
+})();
+</script>
+</body>
+</html>
