@@ -172,7 +172,7 @@ section.tight{padding-top:0}
 .chat{display:grid;grid-template-columns:7em 1fr;min-height:100%}
 .chat aside{background:#f9f9f9;border-right:1px solid #ececec;padding:1em .8em;font-size:.85em;color:#555}
 .chat aside div{margin-bottom:.9em}
-.chat main{padding:1em 1.4em 1.3em}
+.chat .cmain{padding:1em 1.4em 1.3em}
 .chat .who{font-weight:700;font-size:1.1em;margin-bottom:1em;display:flex;justify-content:space-between}
 .chat .bubble{margin-left:auto;background:#f1f1f1;border-radius:1.2em;padding:.6em 1em;width:fit-content;max-width:90%;margin-bottom:1.1em}
 .chat ol{margin:.7em 0 0;padding-left:1.4em}
@@ -769,7 +769,7 @@ dialog .db{max-height:78vh;overflow:auto}
     <div class="state-row">
       <article class="card sc"><h3>Yelp now feeds ChatGPT's local recommendations</h3><div class="fy">Your Yelp reviews now shape what ChatGPT says about you.</div><a href="https://grailstar.com/blog/yelp-chatgpt-local-recommendations" target="_blank" rel="noopener">Grailstar, Jul 27, 2026</a></article>
       <article class="card sc"><h3>Google's AI Mode answers without sending clicks</h3><div class="fy">The AI's answer is the visit. Being named in it matters most.</div><a href="https://www.theanswerengine.ai/blog/how-google-ai-mode-changes-local-business-discovery" target="_blank" rel="noopener">The Answer Engine, Mar 25, 2026</a></article>
-      <article class="card sc"><h3>ChatGPT recommends businesses it can verify</h3><div class="fy">Matching listings and press mentions are the evidence it checks.</div><a href="https://cmc-seo.com/chatgpt-recommends-local-businesses/" target="_blank" rel="noopener">CMC SEO, Jul 28, 2026</a></article>
+      <article class="card sc"><h3>ChatGPT recommends businesses it can verify</h3><div class="fy">Matching listings across the web are the evidence it checks.</div><a href="https://cmc-seo.com/chatgpt-recommends-local-businesses/" target="_blank" rel="noopener">CMC SEO, Jul 28, 2026</a></article>
     </div>
   </div>
 </section>
@@ -1057,7 +1057,7 @@ dialog .db{max-height:78vh;overflow:auto}
     var li=names.map(function(n){return '<li><b>'+esc(n)+'</b>'+sk('w90')+sk('w60')+'</li>';}).join('');
     if(showMe) li+='<li class="me"><b>La Grazia Aesthetics &amp; Wellness Center</b>'+sk('w80')+sk('w40')+'</li>';
     var tag=showMe?'':'<span class="notp" style="margin-top:.6em">La Grazia Aesthetics &amp; Wellness Center is not named</span>';
-    return '<div class="mock" style="'+(size?'font-size:'+size+'px':'')+'"><div class="chat"><aside><div>New chat</div><div>Search chats</div><div>Library</div></aside><main><div class="who"><span>'+who+'</span><span style="font-weight:400;color:#888">Log in</span></div><div class="bubble">'+esc(q)+'</div><div>Here are several options in Rancho Cucamonga, CA:</div><ol>'+li+'</ol>'+tag+'</main></div></div>';
+    return '<div class="mock" style="'+(size?'font-size:'+size+'px':'')+'"><div class="chat"><aside><div>New chat</div><div>Search chats</div><div>Library</div></aside><div class="cmain"><div class="who"><span>'+who+'</span><span style="font-weight:400;color:#888">Log in</span></div><div class="bubble">'+esc(q)+'</div><div>Here are several options in Rancho Cucamonga, CA:</div><ol>'+li+'</ol>'+tag+'</div></div></div>';
   }
   var SHOTS=[];
   function shot(builder,title,h,fs){
@@ -1227,7 +1227,7 @@ dialog .db{max-height:78vh;overflow:auto}
   function education(R){
     return '<div class="card chartcard edu-chart"><h3>Here\u2019s where you are.</h3><p>This is what a typical engagement looks like from here until you see results. Visibility in AI and Google builds slowly at first, then compounds. The curve is the shape, not a promise.</p><div class="edu-desktop">'+trajectory(R.month,false)+'</div><div class="edu-mobile">'+trajectory(R.month,true)+'<ol class="edu-key">'+PHASES.map(function(ph,i){return '<li><b>'+(i+1)+'</b><div><strong>'+ph[2]+'</strong><span>Month '+ph[0]+(ph[1]-1>ph[0]?' to '+(ph[1]-1):'')+(i===PHASES.length-1?' and on':'')+'</span></div></li>';}).join('')+'<li class="top"><b>\u2191</b><div><strong>AI recommends you</strong><span>Where the curve is heading</span></div></li></ol></div>'+
       '<div class="edu-cites"><b>Sources</b>'+CITES.map(function(c){return '<a href="'+c[1]+'" target="_blank" rel="noopener">'+c[0]+'</a>';}).join('')+'</div></div>'+
-      '<article class="card found" style="margin-top:18px"><div><h3>Already in the ground.</h3><p>Before an assistant names a business, it checks that the web agrees about it. That evidence is what we are building now, and it compounds.</p><ul><li><strong>Matching listings.</strong> Every directory that shows the same name, address and phone is one more source saying you are real.</li><li><strong>Independent mentions.</strong> Press and local write-ups count more than anything on your own site.</li><li><strong>Fresh activity.</strong> Weekly posts, photos and review replies show the business is alive.</li></ul></div><div class="built"><div class="bt"><span>Your record, verified</span><b>\u2713</b></div><div class="bt"><span>Matching listings</span><b>\u2713</b></div><div class="bt"><span>Weekly Google posts</span><b>'+(TIERS[tier].gmb?'\u2713':'\uD83D\uDD12')+'</b></div><div class="bt"><span>Photos coded for AI</span><b>'+(TIERS[tier].gmb?'\u2713':'\uD83D\uDD12')+'</b></div><div class="bt"><span>Weekly AI checks running</span><b>\u2713</b></div></div></article>';
+      '<article class="card found" style="margin-top:18px"><div><h3>Already in the ground.</h3><p>Before an assistant names a business, it checks that the web agrees about it. That evidence is what we are building now, and it compounds.</p><ul><li><strong>Matching listings.</strong> Every directory that shows the same name, address and phone is one more source saying you are real.</li><li><strong>Independent mentions.</strong> What other sites say about you counts more than anything on your own site.</li><li><strong>Fresh activity.</strong> Weekly posts, photos and review replies show the business is alive.</li></ul></div><div class="built"><div class="bt"><span>Your record, verified</span><b>\u2713</b></div><div class="bt"><span>Matching listings</span><b>\u2713</b></div><div class="bt"><span>Weekly Google posts</span><b>'+(TIERS[tier].gmb?'\u2713':'\uD83D\uDD12')+'</b></div><div class="bt"><span>Photos coded for AI</span><b>'+(TIERS[tier].gmb?'\u2713':'\uD83D\uDD12')+'</b></div><div class="bt"><span>Weekly AI checks running</span><b>\u2713</b></div></div></article>';
   }
   var shown=0;
   function drawWins(R,append){
@@ -1291,7 +1291,7 @@ dialog .db{max-height:78vh;overflow:auto}
     $('timeline').innerHTML=list.map(function(a){var open=a.u?(a.local?'<a class="view" href="'+a.u+'">See it</a>':'<a class="view" href="'+esc(a.u)+'" target="_blank" rel="noopener">Open</a>'):'';
       return '<div class="tl"><div class="tl-d">'+a.d+'</div><div class="tl-dot k-'+a.k+'"></div><div class="card tl-c">'+microThumb(a.k)+'<div><span class="tl-t">'+a.t+'</span><b>'+esc(a.x)+'</b></div>'+open+'</div></div>';}).join('')||'<p style="text-align:center;color:var(--muted)">Nothing in this category this month.</p>';
   }
-  $('actTabs').addEventListener('click',function(e){var b=e.target.closest('.tab');if(!b)return;if(b.dataset.lock){toast('Articles and blogs are part of '+b.dataset.lock+'.');return;}actK=b.dataset.k;drawActs();});
+  $('actTabs').addEventListener('click',function(e){var b=e.target.closest('.tab');if(!b)return;if(b.dataset.lock){toast('Available on '+b.dataset.lock+'.');return;}actK=b.dataset.k;drawActs();});
   var TECH=[
     {i:'t_map',t:'Topical map',d:'The strategy. A map of every topic a patient might ask about, so your site answers all of them and AI sees you as the authority on each.'},
     {i:'t_fix',t:'Technical fixes',d:'Clean web addresses, a sitemap and a robots file. Boring, but it is how search engines and AI find every page without getting lost.'},
@@ -1322,7 +1322,7 @@ dialog .db{max-height:78vh;overflow:auto}
   }
   function drawPress(){
     var T=TIERS[tier],on=T.pr&&pr;
-    if(!T.pr){$('press').hidden=false;$('pressEye').textContent='Press coverage, Tier 3';$('pressH').textContent='Get your story in the news.';$('pressP').textContent='On Tier 3 we write a press release about what you do best and publish it across hundreds of news sites. Every article links back to you. Here is what that looks like for a business like yours.';$('prCard').hidden=true;drawNewsstand(0,true);lockEl('pressWrap','Tier 3','A press release about what you do best, published across hundreds of news sites, every one linking back to you.');return;}
+    if(!T.pr){$('press').hidden=true;return;}
     unlock('pressWrap');$('pressEye').textContent='Press coverage';$('pressP').textContent='One press release, written about what you do best, published across the news. Every article links back to your website. This is the evidence AI checks before it names you.';$('prCard').hidden=false;
     $('press').hidden=!on;
     if(on){$('pressH').textContent='Your story ran in 418 news outlets.';$('prMeta').textContent='Published Aug 26, 2026';drawNewsstand(381);}
@@ -1340,7 +1340,7 @@ dialog .db{max-height:78vh;overflow:auto}
     var aiUp=['gpt','ppx','gem'].some(function(k){var v=R.ai[k];return v[v.length-1]>v[v.length-2];});$('ai-trend').hidden=!aiUp;if(aiUp)aiChart(R.ai);
     var tr=R.traffic,trUp=tr[tr.length-1]>tr[tr.length-2];$('trafficBlock').hidden=!trUp;if(trUp)trafficChart(tr);
     drawPress();$('dirCounts').innerHTML='<span class="cnt live"><b>24</b> live</span><span class="cnt wait"><b>7</b> pending</span>';
-    drawActs();drawReviews();drawTech();drawAsks();
+    drawActs();drawReviews();drawTech();drawAsks();drawNext();
     var g=function(label,items,cur,disabled){return '<span class="grp"><span>'+label+'</span>'+items.map(function(i){return '<button type="button" data-g="'+label+'" data-v="'+i[0]+'" aria-pressed="'+(String(cur)===String(i[0]))+'"'+(disabled?' disabled':'')+'>'+i[1]+'</button>';}).join('')+'</span>';};
     $('modes').innerHTML=g('Tier',[[2,'Tier 2'],[3,'Tier 3'],[4,'Tier 4']],tier)+g('Results',Object.keys(RESULTS).map(function(k){return [k,RESULTS[k].label];}),res)+g('PR',[[true,'Yes'],[false,'No']],T.pr?pr:false,!T.pr);
   }
@@ -1359,7 +1359,8 @@ dialog .db{max-height:78vh;overflow:auto}
     ['Keep earning links to your site','from sites worth your name.'],
     ['Re-check every directory listing on a schedule','and fix anything that drifts.']
   ];
-  $('nextList').innerHTML=NEXT.map(function(n){return '<div class="card nx"><span class="ck"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3.2 3.2L13 5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span><p><b>'+n[0]+'</b> '+n[1]+'</p></div>';}).join('');
+  function drawNext(){var T=TIERS[tier];var list=NEXT.filter(function(n){if(/press release/i.test(n[0]))return T.pr;if(/Google listing|reviews from three|photos to your listing|clicks/i.test(n[0]))return T.gmb;return true;});
+  $('nextList').innerHTML=list.map(function(n){return '<div class="card nx"><span class="ck"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3.2 3.2L13 5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span><p><b>'+n[0]+'</b> '+n[1]+'</p></div>';}).join('');}
 
   /* ---------- badge: preview and embed share one markup ---------- */
   var PROFILE='https://localairegistry.com/biz/ca/rancho-cucamonga/la-grazia-aesthetics-and-wellness-center-rancho-cucamonga-ca';
