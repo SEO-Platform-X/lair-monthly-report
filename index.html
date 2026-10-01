@@ -1167,13 +1167,13 @@ dialog .db{max-height:78vh;overflow:auto}
 
   var TIERS={
     2:{name:'Tier 2',gmb:false,pr:false,articles:false,tech:false,takedown:false,replies:false,asks:false},
-    3:{name:'Tier 3',gmb:true,pr:true,articles:false,tech:false,takedown:false,replies:true,asks:true},
+    3:{name:'Tier 3',gmb:true,pr:true,articles:false,tech:false,takedown:true,replies:true,asks:true},
     4:{name:'Tier 4',gmb:true,pr:true,articles:true,tech:true,takedown:true,replies:true,asks:true}
   };
   var RESULTS={
     normal:{label:'Normal',resH:'Congratulations. This is working.',glance:[['g1','2','AI answers name you'],['g2','+209%','Clicks on your search result'],['g3','25<small>+2</small>','AI Score'],['g4','9','First-page Google rankings']],winsH:'Congrats! You\u2019re showing up for:',wins:W_AUG,inbox:{wait:3,month:11},ai:{gpt:[0,0,0,0,0,0,11],ppx:AI_FLAT,gem:AI_FLAT,max:20},traffic:[3,3,3,4,4,22]},
     amazing:{label:'Amazing',resH:'Congratulations. You own your market.',glance:[['g1','112','AI answers name you'],['g2','+640%','Clicks on your search result'],['g3','71<small>+19</small>','AI Score'],['g4','48','First-page Google rankings']],winsH:'Congrats! You\u2019re showing up for:',wins:W_POOL,page:5,inbox:{wait:9,month:63},ai:{gpt:[0,11,24,38,52,66,78],ppx:[0,0,8,20,41,55,64],gem:[0,0,0,12,28,40,52],max:100},traffic:[22,41,88,160,262,410]},
-    none:{label:'No results yet',education:true,month:2,resH:'The foundation is going in.',glance:[],winsH:'',wins:[],inbox:{wait:0,month:3},ai:{gpt:AI_FLAT,ppx:AI_FLAT,gem:AI_FLAT,max:20},traffic:[3,3,3,4,4,4]}
+    none:{label:'No results yet',education:true,month:2,resH:'The foundation is going in.',glance:[],winsH:'',wins:[],inbox:{wait:2,month:3},ai:{gpt:AI_FLAT,ppx:AI_FLAT,gem:AI_FLAT,max:20},traffic:[3,3,3,4,4,4]}
   };
   var ACT_DIR=[{k:'dir',t:'Directories',d:'Sep 15',x:'Yelp, MapQuest, Vagaro re-checked',u:''},{k:'dir',t:'Directories',d:'Sep 2',x:'Cylex and Cybo submitted',u:''},{k:'dir',t:'Directories',d:'Aug 21',x:'21 listings submitted',u:''}];
   var ACT_GMB=[{k:'post',t:'Google post',d:'Sep 16',x:'Microneedling',u:GP+'CIHM0ogKELTj4ovPrdf8-AE'},{k:'post',t:'Google post',d:'Sep 15',x:'IV hydration',u:GP+'CIHM0ogKEJKmga-5tu-W4gE'},{k:'review',t:'Review reply',d:'Sep 12',x:'5-star review answered',u:''},{k:'photo',t:'Photos',d:'Sep 8',x:'17 photos added and coded',u:'https://www.google.com/maps/place/?q=place_id:ChIJjc5sVcI1w4AR5mTOFKQJk_A'},{k:'post',t:'Google post',d:'Aug 27',x:'Fine lines and wrinkles',u:GP+'CIHM0ogKEOSHssyF2qu0sgE'},{k:'post',t:'Google post',d:'Aug 25',x:'Botox appointments',u:GP+'CIHM0ogKEPWO4IaC_q7k7gE'}];
@@ -1313,18 +1313,18 @@ dialog .db{max-height:78vh;overflow:auto}
     if(TIERS[tier].tech)unlock('techWrap');else lockEl('techWrap','Tier 4','The structural work that makes everything else stick: topical map, technical fixes, AI-readable files, crawl budget and schema.');
   }
   function emblem(on){
-    return '<div class="emblem'+(on?'':' off')+'"><svg viewBox="0 0 120 120"><defs><path id="ep" d="M60,60 m-46,0 a46,46 0 1,1 92,0 a46,46 0 1,1 -92,0"/></defs><g class="ring"><circle cx="60" cy="60" r="46" fill="none" stroke="'+(on?'#1F4FE0':'#C8CDD6')+'" stroke-width="1.5" stroke-dasharray="3 4"/><text><textPath href="#ep">NEGATIVE REVIEW PROTECTION \u00b7 '+(on?'ON \u00b7 WATCHING':'LOCKED \u00b7 TIER 4')+' \u00b7 </textPath></text></g><circle cx="60" cy="60" r="30" fill="'+(on?'#1F4FE0':'#C8CDD6')+'"/><path d="M60 40l16 6v10c0 10-7 17-16 21-9-4-16-11-16-21V46z" fill="#fff"/>'+(on?'<path d="M52 61l6 6 11-12" stroke="#1F4FE0" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>':'<rect x="54" y="58" width="12" height="9" rx="2" fill="#8A93A3"/><path d="M57 58v-3a3 3 0 0 1 6 0v3" stroke="#8A93A3" stroke-width="2" fill="none"/>')+'</svg></div>';
+    return '<div class="emblem'+(on?'':' off')+'"><svg viewBox="0 0 120 120"><defs><path id="ep" d="M60,60 m-46,0 a46,46 0 1,1 92,0 a46,46 0 1,1 -92,0"/></defs><g class="ring"><circle cx="60" cy="60" r="46" fill="none" stroke="'+(on?'#1F4FE0':'#C8CDD6')+'" stroke-width="1.5" stroke-dasharray="3 4"/><text><textPath href="#ep">NEGATIVE REVIEW PROTECTION \u00b7 '+(on?'ON \u00b7 WATCHING':'LOCKED \u00b7 TIER 3')+' \u00b7 </textPath></text></g><circle cx="60" cy="60" r="30" fill="'+(on?'#1F4FE0':'#C8CDD6')+'"/><path d="M60 40l16 6v10c0 10-7 17-16 21-9-4-16-11-16-21V46z" fill="#fff"/>'+(on?'<path d="M52 61l6 6 11-12" stroke="#1F4FE0" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>':'<rect x="54" y="58" width="12" height="9" rx="2" fill="#8A93A3"/><path d="M57 58v-3a3 3 0 0 1 6 0v3" stroke="#8A93A3" stroke-width="2" fill="none"/>')+'</svg></div>';
   }
   function drawReviews(){
     var T=TIERS[tier];
     var td='<div id="tdIn">'+emblem(T.takedown)+'<div><h3>Negative review protection</h3><p>New one and two star reviews are flagged and challenged with Google before they settle in, and you hear about each one the same day.</p>'+(T.takedown?'<span class="on"><i></i>On and watching</span>':'')+'</div></div>';
-    $('takedown').innerHTML=T.takedown?td:lockBox(td,'Tier 4','Automatic challenges on new negative reviews.');
+    $('takedown').innerHTML=T.takedown?td:lockBox(td,'Tier 3','Automatic challenges on new negative reviews.');
     var you=2,comp=11,need=comp-you+1;
     var rr='<div id="rrIn" class="rr"><div class="ill" style="width:120px;height:100px;margin:0">'+ILL.reviews+'</div><div><h3>Competitor review monitoring</h3><p>How fast reviews are coming in for you versus the businesses AI compares you to.</p>'+
       '<div class="vel"><div class="vrow"><span>You</span><div class="tr"><i style="width:'+Math.round(you/comp*100)+'%;background:var(--coral)"></i></div><b>'+you+' / wk<span class="ph">*</span></b></div><div class="vrow"><span>Competitors</span><div class="tr"><i style="width:100%;background:var(--blue)"></i></div><b>'+comp+' / wk<span class="ph">*</span></b></div></div>'+
       '<div class="need-wk"><b>'+need+'<span class="ph">*</span></b><span>reviews a week to pull ahead</span></div>'+
       '<a class="tips-link" href="#needReviews">Tips and tricks here \u2193</a></div></div>';
-    $('revreply').innerHTML=rr;
+    $('revreply').innerHTML=T.replies?rr:lockBox(rr,'Tier 3','See how fast reviews come in for you versus your competitors, and how many you need to pull ahead.');
   }
   function drawPress(){
     var T=TIERS[tier],on=T.pr&&pr;
