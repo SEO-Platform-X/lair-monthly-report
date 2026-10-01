@@ -722,6 +722,13 @@ dialog .db{max-height:78vh;overflow:auto}
 .tips-link{font-weight:700;font-size:14px;color:var(--bluetext);text-decoration:none}
 .tips-link:hover{text-decoration:underline}
 #needReviews{scroll-margin-top:24px}
+</style><style>
+.newsstand:has(.sample-one){display:block;max-width:720px;margin:22px auto 0}
+.np.sample-one{height:auto;min-height:340px;padding:28px}
+.np.sample-one .mh{font-size:34px;text-align:center;letter-spacing:.06em}
+.np.sample-one .hl{font-size:24px;margin:10px 0 16px}
+.np.sample-one .sk{height:7px;margin-bottom:7px}
+.np.sample-one .mt-img{background:var(--blue);opacity:.85}
 </style><body>
 <div class="sample-bar" id="modes"></div>
 
@@ -1294,7 +1301,9 @@ dialog .db{max-height:78vh;overflow:auto}
   }
   function drawPress(){
     var T=TIERS[tier],on=T.pr&&pr;
-    if(!T.pr){$('press').hidden=true;return;}
+    if(!T.pr){$('press').hidden=false;$('pressEye').textContent='Press coverage, Tier 3';$('pressH').textContent='Get your story in the news.';$('pressP').textContent='On Tier 3 we write a press release about what you do best and publish it across hundreds of news sites. Every article links back to you.';$('prCard').hidden=true;
+      $('newsstand').innerHTML='<div class="np big sample-one"><div class="mh s1" style="white-space:normal">The Daily Record</div><div class="dl">Example \u00b7 Press release</div><div class="hl">Your story, about what you do best</div><div class="cols"><div>'+sk()+sk()+sk()+sk()+sk()+sk()+sk()+'</div><div><div class="mt-img" style="height:70px;margin-bottom:8px;border-radius:4px"></div>'+sk()+sk()+sk()+sk()+'</div></div></div>';
+      lockEl('pressWrap','Tier 3','A press release about what you do best, published across hundreds of news sites, every one linking back to you.');return;}
     unlock('pressWrap');$('pressEye').textContent='Press coverage';$('pressP').textContent='One press release, written about what you do best, published across the news. Every article links back to your website. This is the evidence AI checks before it names you.';$('prCard').hidden=false;
     $('press').hidden=!on;
     if(on){$('pressH').textContent='Your story ran in 418 news outlets.';$('prMeta').textContent='Published Aug 26, 2026';drawNewsstand(381);}
