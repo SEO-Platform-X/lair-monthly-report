@@ -712,6 +712,16 @@ dialog .db{max-height:78vh;overflow:auto}
 .edu-key li.top b{background:var(--blue);color:#fff;border-color:var(--blue)}
 .edu-key strong{display:block;font-family:var(--label);font-weight:800;font-size:14px;line-height:1.2}
 .edu-key span{font-size:12.5px;color:var(--muted)}
+</style><style>
+.rr .vel{margin:14px 0 12px}
+.rr .vrow{grid-template-columns:90px 1fr 84px;font-size:13.5px}
+.rr .vrow b{font-size:14px}
+.need-wk{display:flex;align-items:baseline;gap:10px;margin-bottom:12px}
+.need-wk b{font-family:var(--label);font-weight:800;font-size:30px;letter-spacing:-.03em;color:var(--bluetext);line-height:1}
+.need-wk span{font-size:14px;color:var(--muted)}
+.tips-link{font-weight:700;font-size:14px;color:var(--bluetext);text-decoration:none}
+.tips-link:hover{text-decoration:underline}
+#needReviews{scroll-margin-top:24px}
 </style><body>
 <div class="sample-bar" id="modes"></div>
 
@@ -1303,8 +1313,12 @@ dialog .db{max-height:78vh;overflow:auto}
     var T=TIERS[tier];
     var td='<div id="tdIn">'+emblem(T.takedown)+'<div><h3>Negative review protection</h3><p>New one and two star reviews are flagged and challenged with Google before they settle in, and you hear about each one the same day.</p>'+(T.takedown?'<span class="on"><i></i>On and watching</span>':'')+'</div></div>';
     $('takedown').innerHTML=T.takedown?td:lockBox(td,'Tier 4','Automatic challenges on new negative reviews.');
-    var rr='<div id="rrIn"><div class="ill" style="width:120px;height:100px;margin:0">'+ILL.reviews+'</div><div><h3>Review replies, in your voice</h3><p>Every review from three stars up gets a reply written in your voice. You see each one before it goes live.</p>'+(T.replies?'<span class="on"><i></i>On</span>':'')+'</div></div>';
-    $('revreply').innerHTML=T.replies?rr:lockBox(rr,'Tier 3','Replies to every review, written in your voice and sent to you first.');
+    var you=2,comp=11,need=comp-you+1;
+    var rr='<div id="rrIn" class="rr"><div class="ill" style="width:120px;height:100px;margin:0">'+ILL.reviews+'</div><div><h3>Competitor review monitoring</h3><p>How fast reviews are coming in for you versus the businesses AI compares you to.</p>'+
+      '<div class="vel"><div class="vrow"><span>You</span><div class="tr"><i style="width:'+Math.round(you/comp*100)+'%;background:var(--coral)"></i></div><b>'+you+' / wk<span class="ph">*</span></b></div><div class="vrow"><span>Competitors</span><div class="tr"><i style="width:100%;background:var(--blue)"></i></div><b>'+comp+' / wk<span class="ph">*</span></b></div></div>'+
+      '<div class="need-wk"><b>'+need+'<span class="ph">*</span></b><span>reviews a week to pull ahead</span></div>'+
+      '<a class="tips-link" href="#needReviews">Tips and tricks here \u2193</a></div></div>';
+    $('revreply').innerHTML=rr;
   }
   function drawPress(){
     var T=TIERS[tier],on=T.pr&&pr;
