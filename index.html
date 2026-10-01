@@ -729,7 +729,7 @@ dialog .db{max-height:78vh;overflow:auto}
 .np.sample-one .hl{font-size:24px;margin:10px 0 16px}
 .np.sample-one .sk{height:7px;margin-bottom:7px}
 .np.sample-one .mt-img{background:var(--blue);opacity:.85}
-</style><body>
+</style><style>.ib-badge{background:var(--coral);color:#1A0A06}.ib-badge .ph{color:#1A0A06}</style><body>
 <div class="sample-bar" id="modes"></div>
 
 <header class="hero">
@@ -801,7 +801,7 @@ dialog .db{max-height:78vh;overflow:auto}
         <div class="ill left" id="ibIll"></div>
         <div class="eyebrow">People reached out</div>
         <h2 class="h2l">Customers are messaging you on your profile.</h2>
-        <p class="pl">When someone finds you through AI or Google, many land on your Local AI Registry page and ask a question or request an appointment. Those messages wait in your inbox until you answer.</p>
+        <p class="pl">People who find you through AI or Google ask questions and request appointments on your profile. They wait in your inbox until you answer.</p>
         <a class="btn primary" href="https://localairegistry.com/login" target="_blank" rel="noopener">Open your inbox</a>
       </div>
       <div class="card inboxcard" id="ibCard"></div>
@@ -1248,9 +1248,8 @@ dialog .db{max-height:78vh;overflow:auto}
   document.addEventListener('click',function(e){if(e.target.closest('#winsMore'))drawWins(RESULTS[res],true);});
   function drawInbox(ib){
     var rows=[['A','Appointment request','Microneedling, any weekday after 4 p.m.','2d'],['M','Question','Do you offer package pricing for Botox?','4d'],['J','Question','Is there parking at the Arrow Route location?','6d'],['R','Appointment request','IV hydration, Saturday morning','Replied'],['K','Question','Do you take walk-ins?','Replied']];
-    var h='<div class="ib-top"><b>Your inbox</b>'+(ib.wait?'<span class="ib-badge">'+ib.wait+' waiting<span class="ph">*</span></span>':'<span class="ib-badge" style="background:var(--goodtint);color:var(--good)">All replied</span>')+'</div>';
+    var h='<div class="ib-top"><b>Your inbox</b><span class="ib-badge">'+ib.wait+' unanswered<span class="ph">*</span></span></div>';
     rows.slice(0,4).forEach(function(r,i){var un=i<ib.wait;h+='<div class="ib-row'+(un?' unread':'')+'"><span class="av'+(un?'':' done')+'">'+r[0]+'</span><div><b>'+r[1]+'</b><span>'+r[2]+'</span></div><em>'+(un?r[3]:'Replied')+'</em></div>';});
-    h+='<div class="ib-foot">'+ib.month+' people reached out this month<span class="ph">*</span>. Replying fast keeps them, and shows AI you\u2019re active.</div>';
     $('ibCard').innerHTML=h;
     $('ibIll').innerHTML=ib.wait?ILL.inbox:ILL.inbox.replace(/<circle cx="166"[\s\S]*?<\/text>/,'');
   }
