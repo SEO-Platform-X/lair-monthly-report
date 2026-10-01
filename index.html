@@ -729,7 +729,12 @@ dialog .db{max-height:78vh;overflow:auto}
 .np.sample-one .hl{font-size:24px;margin:10px 0 16px}
 .np.sample-one .sk{height:7px;margin-bottom:7px}
 .np.sample-one .mt-img{background:var(--blue);opacity:.85}
-</style><style>.ib-badge{background:var(--coral);color:#1A0A06}.ib-badge .ph{color:#1A0A06}</style><body>
+</style><style>.ib-badge{background:var(--coral);color:#1A0A06}.ib-badge .ph{color:#1A0A06}</style><style>
+.locked>.lk-body{opacity:.55;filter:grayscale(.7)}
+.lk-pill{position:absolute;top:14px;right:14px;z-index:2;display:inline-flex;align-items:center;gap:6px;background:var(--ink);color:#fff;border-radius:999px;padding:6px 12px;font-family:var(--label);font-size:11px;font-weight:800;letter-spacing:.14em;text-transform:uppercase}
+.lk-pill svg{width:12px;height:12px}
+.locked .tk,.locked .np,.locked .qrbox{box-shadow:none}
+</style><body>
 <div class="sample-bar" id="modes"></div>
 
 <header class="hero">
@@ -1183,8 +1188,9 @@ dialog .db{max-height:78vh;overflow:auto}
   var DMAP={'Sep 18':918,'Sep 16':916,'Sep 15':915,'Sep 12':912,'Sep 8':908,'Sep 4':904,'Sep 2':902,'Aug 27':827,'Aug 26':826,'Aug 25':825,'Aug 21':821};
   function actsFor(){var T=TIERS[tier],a=ACT_DIR.slice();if(T.gmb)a=a.concat(ACT_GMB);if(T.pr&&pr)a=a.concat(ACT_PR);if(T.articles)a=a.concat(ACT_ART);return a.sort(function(x,y){return DMAP[y.d]-DMAP[x.d];});}
 
+  var LOCKSVG='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg>';
   function lockBox(html,tierNeeded,what){
-    return '<div class="locked"><div class="lk-body">'+html+'</div><div class="lk-over"><span class="lk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg></span><b>Available on '+tierNeeded+'</b><span>'+what+'</span><a class="btn primary" href="https://localairegistry.com/pricing" target="_blank" rel="noopener">Upgrade</a></div></div>';
+    return '<div class="locked"><span class="lk-pill">'+LOCKSVG+'Locked \u00b7 '+tierNeeded+'</span><div class="lk-body">'+html+'</div><div class="lk-over"><span class="lk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg></span><b>Available on '+tierNeeded+'</b><span>'+what+'</span><a class="btn primary" href="https://localairegistry.com/pricing" target="_blank" rel="noopener">Upgrade</a></div></div>';
   }
   function unlock(id){var el=$(id);var l=el.querySelector(':scope>.locked');if(l){el.innerHTML=l.querySelector('.lk-body').innerHTML;}}
   function lockEl(id,tierNeeded,what){unlock(id);var el=$(id);el.innerHTML=lockBox(el.innerHTML,tierNeeded,what);}
@@ -1286,7 +1292,6 @@ dialog .db{max-height:78vh;overflow:auto}
     if(k==='review')return '<div class="mt"><div class="mt-stars">\u2605\u2605\u2605\u2605\u2605</div>'+sk('w90')+sk('w50')+'</div>';
     return '<div class="mt"><div class="mt-pin"></div>'+sk('w70')+sk('w50')+'</div>';
   }
-  var LOCKSVG='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg>';
   function drawActs(){
     var T=TIERS[tier],all=actsFor();
     var chips=[['all','All',true],['dir','Directories',true],['post','Google posts',T.gmb,'Tier 3'],['photo','Photos',T.gmb,'Tier 3'],['review','Review replies',T.replies,'Tier 3'],['pr','Press release',T.pr,'Tier 3'],['article','Articles and blogs',T.articles,'Tier 4']];
